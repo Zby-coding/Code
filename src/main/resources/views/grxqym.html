@@ -1,0 +1,706 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" by:nzcms·ningzhi.net
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/ico" href="nz.ico">
+    <link href="js/home/css/css.css" rel="stylesheet" type="text/css"/>
+    <link href="js/home/css/css_2.css" rel="stylesheet" type="text/css"/>
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--    <link rel="stylesheet" href="css/font-awesome.min.css">-->
+    <!--    <link rel="stylesheet" href="plugins/jqgrid/ui.jqgrid-bootstrap.css">-->
+    <!--    <link rel="stylesheet" href="plugins/ztree/css/metroStyle/metroStyle.css">-->
+    <!--    <link rel="stylesheet" href="css/main.css">-->
+    <script src="libs/jquery.min.js"></script>
+    <script src="plugins/layer/layer.js"></script>
+    <script src="libs/bootstrap.min.js"></script>
+    <script src="libs/vue.min.js"></script>
+    <script src="plugins/jqgrid/grid.locale-cn.js"></script>
+    <script src="plugins/jqgrid/jquery.jqGrid.min.js"></script>
+    <script src="plugins/ztree/jquery.ztree.all.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="plugins/laydate/laydate.js"></script>
+    <script src="libs/jquery/jquery.PrintArea.min.js"></script>
+
+
+    <style>
+        .ssinfo {
+            width: 230px;
+            height: 30px;
+            margin-left: 75px;
+            padding: 0 15px;
+            -moz-border-radius: 6px;
+            -webkit-border-radius: 6px;
+            border-radius: 50px;
+            border: 1px solid #cfcece;
+            -moz-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1) inset;
+            -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1) inset;
+            box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1) inset;
+            font-family: "Microsoft YaHei", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #0a0909;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+            -o-transition: all .2s;
+            -moz-transition: all .2s;
+            -webkit-transition: all .2s;
+            -ms-transition: all .2s;
+            color: #999999;
+        }
+
+        a:link, a:visited {
+            color: #636262;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #636262;
+            text-decoration: none;
+        }
+    </style>
+    <!--防止网页被框架 -->
+
+
+    <!--ie6PNG图片兼容 -->
+    <script type="text/javascript" src="js/home/js/png.js"></script>
+    <script type="text/javascript" src="js/home/js/jquery.liMarquee.js"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('.png,.index_pic_img,.box');
+    </script>
+
+    <!--ie6PNG图片兼容 -->
+</head>
+
+<body>
+<div id="rrapp">
+    <div id="top_box">
+        <div id="top_left">欢迎{{sysuser.realname}}来到多分类搜索平台</div>
+        <div id="top_right">
+            <!--        <a href="/wp/useradmin/login">请登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;-->
+            <!--        <a href="/wp/zxqy/shouye/zc">免费注册</a>&nbsp;&nbsp;|&nbsp;&nbsp;-->
+            <a href="javascript:void(0);" onclick="AddFavorite('多分类搜索平台',location.href)">收藏本站</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="javascript:void(0);" onclick="SetHome(this,document.domain);">设为首页</a></div>
+    </div>
+
+    <!-- <div id="top_flash_box">
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="1200" height="260" align="middle">
+          <param name="movie" value="/static/home/flash/top/top.swf" />
+          <param name="quality" value="high" />
+          <param name="wmode" value="transparent" />
+          <embed src="/static/home/flash/top/top.swf" width="1200" height="80" align="middle" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" wmode='opaque'></embed>
+      </object>
+    </div> -->
+
+
+    <!--下拉这里开始 -->
+    <script type="text/javascript">
+        <!--
+        var timeout = 200;
+        var closetimer = 0;
+        var ddmenuitem = 0;
+
+        // open hidden layer
+        function mopen(id) {
+            // cancel close timer
+            mcancelclosetime();
+
+            // close old layer
+            if (ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+            // get new layer and show it
+            ddmenuitem = document.getElementById(id);
+            ddmenuitem.style.visibility = 'visible';
+
+        }
+
+        // close showed layer
+        function mclose() {
+            if (ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+        }
+
+        // go close timer
+        function mclosetime() {
+            closetimer = window.setTimeout(mclose, timeout);
+        }
+
+        // cancel close timer
+        function mcancelclosetime() {
+            if (closetimer) {
+                window.clearTimeout(closetimer);
+                closetimer = null;
+            }
+        }
+
+        // close layer when click-out
+        document.onclick = mclose;
+
+        // -->
+        function SetHome(obj, url) {
+            try {
+                obj.style.behavior = 'url(#default#homepage)';
+                obj.setHomePage(url);
+            } catch (e) {
+                if (window.netscape) {
+                    try {
+                        netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                    } catch (e) {
+                        alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+                    }
+                } else {
+                    alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【" + url + "】设置为首页。");
+                }
+            }
+        }
+
+        //收藏本站
+        function AddFavorite(title, url) {
+            try {
+                window.external.addFavorite(url, title);
+            } catch (e) {
+                try {
+                    window.sidebar.addPanel(title, url, "");
+                } catch (e) {
+                    alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+                }
+            }
+        }
+    </script>
+
+
+    <div id="top_dh_01" style="text-align: center; background-color: #009688 ;">
+        <form action="" method="post" class="form form-horizontal">
+            <div id="sddm" style=" width:1200px;margin: auto;height: 100%;overflow:hidden;">
+
+                <ul style=" list-style-type:none;  display:inline; text-align: center; ">
+                    <li style="  line-height: 65px; "><a href="" style="font-size:24px;">欢迎光临</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					</li>
+
+					<li style="  line-height: 65px; font-size:18px;"><a style="font-size:18px;  "
+																		href="shiyan.html">视频資源</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					</li>
+					<li style="  line-height: 65px; font-size:18px;"><a style="font-size:18px;  "
+																		href="znhdqd.html">资源信息</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					</li>
+					<li style="  line-height: 65px; font-size:18px;"><a style="font-size:18px;  "
+																		href="kemu.html">科目资料</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					</li>
+					<li style="  line-height: 65px; font-size:18px;"><a style="font-size:18px;"
+																		href="grxqym.html">个人中心</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					</li>
+
+					<li style="  line-height: 65px; font-size:18px;"><a style="font-size:18px;"
+																		href="yqltgl.html">在线讨论</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					</li>
+					<li style="  line-height: 65px; font-size:18px;"><a style="font-size:18px;"
+																		href="index.html#modules/sys/food.html">进入后台</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					</li>
+					<li style="  line-height: 65px; font-size:18px; margin-left: 100px;"><a style="font-size:18px;"
+																							href="login.html">登录注册</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					</li>
+
+                </ul>
+
+            </div>
+        </form>
+
+    </div>
+    <!--下拉这里结束 -->
+
+
+    <link type="text/css" rel="stylesheet" href="js/home/css/wang.css">
+    <div><img src="img/banner.jpg" style="width: 100%;"/></div>
+    <div id="box">
+        <table class="table1200" border="0" align="center" cellpadding="0" cellspacing="8" bgcolor="#FFFFFF">
+            <tr valign="top">
+                <td width="1" align="center" valign="top" bgcolor="#F5F5F5">
+
+
+                    <!--左侧栏目 -->
+                    <table height="30" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </table>
+
+                </td>
+                <td align="center">
+
+
+                    <table height="30" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <table width="100%" height="30" border="0" cellpadding="3" cellspacing="0" bgcolor="#F5F5F5"
+                           class="bg_qc">
+                        <tr>
+                            <td width="25" height="20" align="center"><img
+                                    src="img/nzcms.xinxin.gif" alt="标"/></td>
+                            <td align="left" class="title12">您的位置：
+                                &nbsp;&gt;&nbsp;
+                                个人信息页面
+                            </td>
+                        </tr>
+                    </table>
+                    <table height="10" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </table>
+
+                    <!--图片格式显示 -->
+                    <meta http-equiv="Content-Type" content="text/html; "/>
+                    <!--服务专家显示 -->
+                    <table style="border: 1px;margin: 0 auto;background: snow" width="66%" cellpadding="5"
+                           cellspacing="0">
+
+                        <tr>
+                            <td width="30%" rowspan="5">
+                                <img :src=sysuser.photopath style="width: 200px;height: 200px;" alt=""/></td>
+
+                            <td width="12%">姓名</td>
+
+                            <td width="26%"><input type="text" v-model="sysuser.realname" style="width:95%"></td>
+
+                            <td width="10%">性别</td>
+
+                            <td width="31%"><select style="width: 96%" v-model="sysuser.xb">
+
+                                <option>男</option>
+
+                                <option>女</option>
+
+                            </select></td>
+                        </tr>
+
+                        <tr>
+                            <td>手机号码</td>
+
+                            <td><input type="tel" style="width:95%" v-model="sysuser.mobile"></td>
+
+                            <td>电子邮箱</td>
+
+                            <td><input type="email" style="width:95%" v-model="sysuser.email"></td>
+                        </tr>
+
+                        <tr>
+                            <td>通讯地址</td>
+
+                            <td colspan="3"><input name="text" type="text" style="width: 95%; "
+                                                   v-model="sysuser.address"/></td>
+                        </tr>
+
+                        <tr>
+                            <td height="59">自我介绍</td>
+
+                            <td colspan="3"><input type="text" style="width: 98%; " v-model="sysuser.ramark"></td>
+                        </tr>
+
+
+                        <tr>
+                            <td>家庭住址</td>
+
+                            <td colspan="3"><input type="text" style="width: 98%; " v-model="sysuser.jtzz"></td>
+                        </tr>
+
+                        <tr>
+
+                            <td align="center">
+                                <input type="button" class="btn btn-primary" value="点击更新"
+                                       @click="openPreachData(sysuser.userId)"
+                                       data-target="#myModal"/></td>
+                            <td colspan="4" align="right">请确认个人信息！</td>
+                        </tr>
+
+                        <tr>
+
+                            <td align="center">
+                                <input type="button" class="btn btn-primary" style="text-align: center" value="修改个人密码"
+                                       @click="openMMPreachData(sysuser.userId)"
+                                       data-target="#myModal"/>
+
+                                <!--                                <input type="submit" value="提交">-->                                </td>
+                            <td colspan="4" align="right">
+                                <a class="btn btn-primary btn-sm"
+                                                             @click="updateuser">&nbsp;修改</a>
+                            </td>
+                        </tr>
+                    </table>
+
+        </table>
+        <!--文章显示 -->
+        <div style="height: 100px">
+
+        </div>
+        </td>
+        </tr>
+        </table>
+    </div>
+    ﻿
+    <div id="end_dh_BOX">
+        <div id="end_dh_03" style="background-color: #009688;width:100%;color: #efefef;font-family:microsoft yahei;position: fixed;left: 0;bottom: 0;">
+
+            <br>
+            再次欢迎光临观看本平台！
+            <br>
+            <style>
+                .c_img {
+                    position: relative;
+                    margin-left: -200px;
+                }
+
+                .c_words {
+                    margin-top: -25px;
+                    margin-left: 25px;
+                }
+            </style>
+        </div>
+
+
+    </div>
+
+    <!-- 上传附件 模态框-->
+    <div class="modal fade" id="myModalPreachData" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title">
+                        上传头像
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <form id="upload" method="post" class="form-horizontal" enctype="multipart/form-data">
+                        <div class="form-group" v-show="importModle">
+
+                            <div class="col-sm-2 control-label">相关附件</div>
+                            <div class="col-md-7" v-show="importModle">
+                                <input type="file" id="fileList" multiple="multiple" name="fileList">
+                            </div>
+
+
+                            <div class="col-sm-1">
+                                <button type="button" id="imports" class="btn btn-primary" @click="importFile">上传
+                                </button>
+                            </div>
+                        </div>
+
+                        <table class="col-md-12">
+                            <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th>附件名称</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr v-if="allFiles.length>0" v-for="(item, index) in allFiles">
+                                <td>{{index+1}}</td>
+                                <td>{{item.fileName}}</td>
+                                <td><a href="javascript:void(0);" @click="download(item.id)">下载</a>
+                                    <a href="javascript:void(0);" v-show="showDelect" v-show="showListuploaddelete"
+                                       @click="deleteFile(item.id,index)">删除</a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                    </button>
+                    <button type="button" class="btn btn-primary" @click="saveFile">
+                        确定
+                    </button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+
+
+    <!-- 上传附件 模态框-->
+    <div class="modal fade" id="myMMModalPreachData" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title">
+                        修改密码
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <form id="uploadMM" method="post" class="form-horizontal" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <div class="col-sm-10">
+                                <input type="text" id="oldpassword" class="form-control"  placeholder="原密码"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-10">
+                                <input type="password" id="passwordone" class="form-control"  placeholder="新密码"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-10">
+                                <input type="password" id="passwordtwo" class="form-control"  placeholder="再次输入新密码"/>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                    </button>
+                    <button type="button" class="btn btn-primary" @click="updatepassword">
+                        确定
+                    </button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+
+</div>
+
+<script src="libs/jquery.min.js"></script>
+<script src="plugins/jqgrid/jquery.jqGrid.min.js"></script>
+<script src="libs/vue.min.js"></script>
+<script src="libs/bootstrap.min.js"></script>
+<script src="libs/app.js"></script>
+<script src="js/common.js"></script>
+<script type="text/javascript">
+    var vm = new Vue({
+        el: '#rrapp',
+        data: {
+            allFiles: [],
+            importModle: true,
+            showListuploadsave: true,
+            selected: '',
+            enclosure: [],
+            showList: true,
+            showDelect: true,
+            showLogin: false,
+            password: '',
+            captcha: '',
+            error: false,
+            errorMsg: '',
+            errorMsgreg: '',
+            src: 'captcha.jpg',
+            sxh: '',
+            sname: '',
+            xzraol: '',
+            susername: '',
+            spassword: '',
+            college: '',
+            major: '',
+            classinfo: '',
+            fileuserid: '',
+            grade: '',
+            zcspassword: '',
+            mmxguserid: '',
+            sysuser: {
+                userId: '',
+                password: '',
+                birthday: '',
+                username: '',
+            },
+
+        },
+        beforeCreate: function () {
+            if (self != top) {
+                top.location.href = self.location.href;
+            }
+        },
+        mounted: function () {   //自动触发写入的函数
+            this.getUser();
+        },
+        methods: {
+            updatepassword: function () {
+                var token = localStorage.getItem("token");
+                console.log("tokentokentokentoken" + token)
+
+                if (token == null) {
+                    // parent.location.href = baseURL + 'login.html';
+                    window.open(baseURL + 'login.html');
+                }else{
+                    if($('#passwordtwo').val() != $('#passwordone').val()){
+                        alert('两次密码不一致！');
+                        return;
+                    }
+                    var tjarray = {"token":token,"oldpassword":$('#oldpassword').val(),"password":$('#passwordone').val()}
+                    $.ajax({
+                        type: "POST",
+                        url: baseURL + "sysIndexQd/updatepassword",
+                        contentType: "application/json",
+                        data: JSON.stringify(tjarray),
+                        success: function(r){
+                            if(r.code === 0){
+                                alert("密码修改成功！")
+                                $("#myMMModalPreachData").modal('hide');
+                            }else{
+                                alert(r.msg);
+                            }
+                        }
+                    });
+                }
+            },
+            openMMPreachData: function (value) {
+                vm.mmxguserid = value;
+                $("#myMMModalPreachData").modal('show');
+            },
+            deleteFile: function(id) {
+                if(id == null) {
+                    alert("请选择要删除的文件!");
+                    return;
+                }
+                vm.deleteFles = {"id":id};
+                confirm('确定要删除该记录？', function(){
+                    $.ajax({
+                        type: "POST",
+                        url: baseURL + "tMaterialFile/deleteByFileId",
+                        contentType: "application/json",
+                        data: JSON.stringify(vm.deleteFles),
+                        success: function(r){
+                            if(r.code == 0){
+                                alert('文件删除成功', function(){
+                                    vm.getUser();
+                                    vm.reload();
+                                });
+                            }else{
+                                alert(r.msg);
+                            }
+                        }
+                    });
+                });
+            },
+            download: function (id) {
+                console.log("id)id)id)id)" + id)
+                $.get(baseURL + "tMaterialFile/ishSingleFile/" + id, function (r) {
+                    if (r.code == 0) {
+                        if (r.fileName != '无下载文件' && r.fileName != '文件不存在') {
+                            var url = baseURL + "tMaterialFile/downFile?id=" + id + "&token=" + token;
+                            window.location.href = url;
+                        } else {
+                            alert(r.fileName)
+                        }
+                    }
+                });
+            },
+            saveFile: function () {
+                var param = {userid:vm.fileuserid,allFiles:vm.allFiles}
+                $.ajax({
+                    type: "POST",
+                    url: baseURL + "sysIndexQd/userSaveFile",
+                    contentType: "application/json",
+                    data: JSON.stringify(param),
+                    success: function(r){
+                        if(r.code === 0){
+                            vm.getUser();
+                            $("#myModalPreachData").modal('hide');
+                        }else{
+                            alert(r.msg);
+                        }
+                    }
+                });
+
+            },
+            openPreachData: function (value) {
+                vm.fileuserid = value;
+                $("#myModalPreachData").modal('show');
+            },
+            importFile: function () {
+                if ($("#fileList").val() == null || $("#fileList").val() == "") {
+                    alert("请选择具体附件再上传!");
+                    return;
+                }
+                var form = document.getElementById('upload');
+                $.ajax({
+                    url: baseURL + "tMaterialFile/importPsot",
+                    type: 'post',
+                    data: new FormData(form),
+                    processData: false,
+                    contentType: false,
+                    dataType: "json",
+                    success: function (r) {
+                        var obj = new Object();
+                        $("#fileList").val("");
+                        obj['id'] = r.id;
+                        obj['filePath'] = r.path;
+                        obj['fileName'] = r.fileName;
+                        obj['mbfklj'] = r.mbfklj;
+                        vm.allFiles.push(obj);
+                        vm.sysuser.files = vm.allFiles;
+                        alert("导入成功！");
+                    },
+                    error: function () {
+                        alert("导入失败！");
+                    }
+                })
+            },
+            updateuser: function () {
+                var tjarray = {"user": vm.sysuser}
+                console.log("sysusersysusersysuser" + JSON.stringify(vm.sysuser))
+
+                $.ajax({
+                    type: "POST",
+                    url: baseURL + "sysIndexQd/updateuser",
+                    contentType: "application/json",
+                    data: JSON.stringify(vm.sysuser),
+                    success: function (r) {
+                        console.log("rrrrrrrrrrrrrrrrrrrr" + JSON.stringify(r))
+                        if (r.code === 0) {
+                            console.log("codecodecodecode" + r.code)
+                            alert('修改成功', function () {
+
+                            });
+                            // $.get(baseURL + "sysIndexQd/getLybListALL", function (r) {
+                            //     vm.sysLybListALL = r.sysLybListALL;
+                            //     console.log("sysLybListALLsysLybListALLsysLybListALL" + JSON.stringify(vm.sysLybListALL))
+                            // });
+                        } else {
+                            console.log("aaaaaaaaaaaaaaaa" + JSON.stringify(r))
+                            alert(r.msg);
+                        }
+                    }
+                });
+            },
+            getUser: function () {
+                var token = localStorage.getItem("token");
+                console.log("tokentokentokentoken" + token)
+
+                if (token == null) {
+                    // parent.location.href = baseURL + 'login.html';
+                    window.open(baseURL + 'login.html');
+                } else {
+                    var tjarray = {"token": token}
+                    $.ajax({
+                        type: "POST",
+                        url: baseURL + "sysIndexQd/getUser",
+                        contentType: "application/json",
+                        data: JSON.stringify(tjarray),
+                        success: function (r) {
+                            if (r.code === 0) {
+                                vm.sysuser = r.sysuser;
+                                vm.sysuser.password = '';
+                            } else {
+                                alert(r.msg);
+                            }
+                        }
+                    });
+                }
+            },
+
+        }
+    });
+</script>
+</body>
+</html>

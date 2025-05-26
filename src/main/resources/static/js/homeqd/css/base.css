@@ -1,0 +1,690 @@
+a {
+	color: inherit;
+}
+a:focus {
+	color: inherit; text-decoration: none;
+}
+a:hover {
+	color: inherit; text-decoration: none;
+}
+.clear {
+	clear: both;
+}
+
+.latest {
+	padding-right: 30px; position: relative;
+}
+.bd_weixin_popup {
+	box-sizing: content-box !important;
+}
+.latest-h2 {
+	color: rgb(51, 51, 51); letter-spacing: 0px; font-family: PingFangSC-Semibold, Microsoft YaHei; font-size: 20px; margin-bottom: 20px; display: block; position: relative;
+}
+.latest-h2 i {
+	color: rgb(106, 136, 176); letter-spacing: 0.41px; font-family: PingFangSC-Light, Microsoft YaHei; font-size: 20px; font-style: normal; margin-left: 13px;
+}
+.latest-list {
+	padding-left: 0px;
+}
+.latest-list li {
+	background: url("../resources/static/img/images/icon-2.gif") no-repeat 0px; width: 100%; text-align: justify; color: rgb(51, 51, 51); line-height: 33px; letter-spacing: 0px; overflow: hidden; padding-left: 22px; font-family: PingFangSC-Regular, Microsoft YaHei; font-size: 14px; display: inline-block; white-space: nowrap; position: relative; -ms-text-overflow: ellipsis;
+}
+.latest-list li a {
+	color: rgb(51, 51, 51);
+}
+.latest-list li:hover {
+	background: url("../resources/static/img/images/icon-1.png") no-repeat 0px;
+}
+.latest-list li:hover a {
+	color: rgb(0, 64, 152);
+}
+.nav-justified .dropdown:hover > a {
+	background-color: rgb(59, 115, 192);
+}
+.modal-header {
+	border: 0px currentColor; border-image: none;
+}
+.modal-footer {
+	border: 0px currentColor; border-image: none;
+}
+.modal-footer .btn {
+	width: 100%;
+}
+
+@media all and (min-width:1200px)
+{
+.container {
+	padding: 0px; width: 1300px;
+}
+.list-container {
+	max-width: 1280px;
+}
+.navbar-collapse {
+	padding: 0px;
+}
+}
+
+.main6 .container {
+	padding: 0px 15px;
+}
+.main6_left {
+	width: 12.5%; float: left;
+}
+.main6_left h2 {
+	color: rgb(0, 64, 152); font-family: PingFangHK-Medium; font-size: 18px; font-weight: bold; margin-top: 0px; margin-bottom: 15px;
+}
+.main6_left p {
+	color: rgb(51, 51, 51); line-height: 34px; letter-spacing: 0px; font-family: PingFangSC-Regular, Microsoft YaHei; font-size: 14px; margin-bottom: 0px; cursor: pointer;
+}
+.main6_left p:hover {
+	color: rgb(0, 64, 152);
+}
+.main6_left1 {
+	width: 25%; float: left; display: none;
+}
+.main6_left2 {
+	overflow: hidden;
+}
+.main6_left2 img {
+	width: 60px; height: 60px; float: left;
+}
+.main6_left2 .r {
+	color: rgb(51, 51, 51); font-family: PingFangSC-Regular, Microsoft YaHei; font-size: 14px; margin-left: 50px; float: left;
+}
+.main6_left1 .mart60 {
+	margin-top: 60px;
+}
+
+
+
+
+.banner {
+	background: url("/jeefast/img/bn-1.png") no-repeat center / cover; padding: 0px; height: 450px; margin-top: 100px; margin-bottom: 0px;
+}
+.ky-banner {
+	background: url("/img/banner-4.png") no-repeat center / cover;
+}
+.map-banner {
+	background: url("/img/banner-1.png") no-repeat center / cover;
+}
+.hy-banner {
+	background: url("/img/banner-2.png") no-repeat center / cover;
+}
+.xy-banner {
+	background: url("/img/banner-6.png") no-repeat left / cover;
+}
+.dx-banner {
+	background: url("/img/banner-1.png") no-repeat left / cover;
+}
+.zs-banner {
+	background: url("img/banner-5.png") no-repeat left / cover;
+}
+.banner .banner-back {
+	right: 15px; bottom: 15px; color: rgb(255, 255, 255); letter-spacing: 0px; font-family: PingFangSC-Light, Microsoft YaHei; font-size: 14px; position: absolute; z-index: 4;
+}
+.banner .container {
+	margin: 0px auto; padding: 0px; height: 251px; position: relative;
+}
+.banner img {
+	width: 100%; height: 100%; display: block; cursor: pointer;
+}
+.banner .nav {
+	left: 15px; top: 34px; color: rgb(255, 255, 255); letter-spacing: 0px; font-size: 16px; position: absolute;
+}
+.banner .notice {
+	margin: 0px; left: 15px; bottom: 34px; color: rgb(255, 255, 255); letter-spacing: 0px; font-family: PingFangSC-Semibold, Microsoft YaHei; font-size: 30px; position: absolute; z-index: 4; text-shadow: 0px 1px 0px rgba(0,0,0,0.5);
+}
+.banner .notice i {
+	color: rgb(255, 255, 255); letter-spacing: 0.41px; font-family: PingFangSC-Light, Microsoft YaHei; font-size: 20px; font-style: normal; margin-left: 10px; display: inline-block;
+}
+.banner .banner_bg {
+	background: url("../resources/static/img/images/banner_bg.png") repeat-x 0px bottom; left: 0px; width: 100%; height: 100px; bottom: 0px; position: absolute; z-index: 3;
+}
+.share_foot {
+	background: rgb(233, 241, 252); height: 75px; text-align: right;
+}
+.list-container {
+	margin-bottom: 50px;
+}
+.share_foot .container {
+	padding: 0px 15px; position: relative;
+}
+.share_foot .container .next {
+	left: 50%; top: 13px; width: 50px; height: 50px; text-align: center; color: rgb(102, 102, 102); line-height: 50px; font-size: 16px; margin-left: -50px; position: absolute; cursor: pointer;
+}
+.share_foot .container .prev {
+	left: 50%; top: 13px; width: 50px; height: 50px; text-align: center; color: rgb(102, 102, 102); line-height: 50px; font-size: 16px; margin-left: -50px; position: absolute; cursor: pointer;
+}
+.share_foot .container .next {
+	margin-left: 0px;
+}
+.share_foot .icon {
+	border-radius: 50%; width: 40px; height: 40px; text-align: center; line-height: 40px; margin-top: 18px; margin-left: 30px; display: inline-block; position: relative; cursor: pointer;
+}
+.share_foot .icon i {
+	color: rgb(0, 64, 152); line-height: 40px; font-size: 2.5em;
+}
+.share_foot .container {
+	position: relative;
+}
+.share_foot .weixin_tanceng {
+	background: rgb(255, 255, 255); padding: 30px; left: 50%; top: 75px; margin-left: -115px; display: none; position: absolute; box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.15);
+}
+.share_foot .weixin_tanceng img {
+	width: 170px; height: 170px;
+}
+.share_foot .weixin_tanceng p {
+	margin: 15px 0px 0px; color: rgb(153, 153, 153); font-size: 14px;
+}
+.share_foot .weixin:hover .weixin_tanceng {
+	display: block;
+}
+.share_foot_m {
+	background: rgb(243, 243, 243); padding: 50px 0px; display: none;
+}
+.share_foot_m .a {
+	color: rgb(0, 64, 152); line-height: 30px; font-family: PingFangSC-Regular, Microsoft YaHei; font-size: 16px; margin-right: 46px; display: inline-block;
+}
+.share_foot_m :nth-child(3n).a {
+	
+}
+.share_foot_m .icon {
+	background: rgb(255, 255, 255); padding: 15px 12px; width: 91%; text-align: center; display: inline-block;
+}
+.text-center {
+	padding: 0px;
+}
+.share_foot_m .icon span {
+	color: rgb(51, 51, 51); line-height: 28px; letter-spacing: 0.35px; font-family: PingFangSC-Regular, Microsoft YaHei; font-size: 14px; margin-left: 10px; display: inline;
+}
+.share_foot_m .icon i {
+	color: rgb(0, 64, 152); display: inline;
+}
+.top_nav {
+	display: none;
+}
+.navmoblie {
+	background: rgba(0, 0, 0, 0.9); padding: 20px 0px; text-align: center; display: none;
+}
+.navmoblie .m1 a {
+	margin: 0px 10px; padding: 7px 36px; border: 1px solid rgb(255, 255, 255); border-image: none; color: rgb(255, 255, 255); font-size: 16px; display: inline-block;
+}
+.navmoblie .m2 {
+	margin-top: 20px;
+}
+.navmoblie .m2 a {
+	padding: 0px 20px; color: rgb(255, 255, 255); line-height: 14px; font-size: 14px; border-left-color: rgba(255, 255, 255, 0.3); border-left-width: 1px; border-left-style: solid; display: inline-block;
+}
+.navmoblie .m2 a:first-child {
+	border-left-color: currentColor; border-left-width: 0px; border-left-style: none;
+}
+.right0309 {
+	
+}
+.right0309 .lefti {
+	background: rgb(255, 255, 255); padding: 4px 10px; color: rgb(51, 51, 51); font-size: 12px; margin-bottom: 10px; margin-left: 10px; float: right; position: relative; cursor: pointer;
+}
+.right0309 .lefti img {
+	width: 16px; margin-top: 2px; margin-right: 6px; float: left;
+}
+.right0309 .lefti .pr {
+	background: url("../resources/static/img/images/201903091 (2).png"); padding: 7px; left: 0px; top: -130px; width: 114px; height: 120px; display: none; position: absolute; z-index: 1;
+}
+.right0309 .lefti:hover .pr {
+	display: block;
+}
+.right0309 .lefti .pr img {
+	width: 100px; height: 100px;
+}
+
+.fixshare {
+	background: rgba(0, 0, 0, 0.8); left: 0px; height: 46px; right: 0px; bottom: 0px; color: rgb(255, 255, 255); line-height: 46px; padding-left: 30px; font-size: 14px; display: none; position: fixed; z-index: 2;
+}
+.fixshare img {
+	margin-left: 30px; cursor: pointer;
+}
+.none {
+	background: none !important; float: none !important; display: inline;
+}
+
+
+
+
+.sub-navbar-collapse {
+	top: 195px; width: 100%; position: absolute; z-index: 9;
+}
+
+.sub-navbar-collapse .nav li {
+	background: rgb(233, 241, 252); color: rgb(51, 51, 51); line-height: 60px; letter-spacing: 0.3px; font-family: PingFangSC-Regular, Microsoft YaHei; font-size: 16px;
+}
+.sub-navbar-collapse .nav li a {
+	color: rgb(51, 51, 51);
+}
+.sub-navbar-collapse .nav li a:hover {
+	color: rgb(0, 64, 152); border-bottom-color: rgb(0, 64, 152); border-bottom-width: 2px; border-bottom-style: solid;
+}
+.sub-navbar-collapse .nav li.active a {
+	color: rgb(0, 64, 152); border-bottom-color: rgb(0, 64, 152); border-bottom-width: 2px; border-bottom-style: solid;
+}
+.sub-cont-nav {
+	color: rgb(153, 153, 153); letter-spacing: 0px; font-family: Microsoft YaHei; font-size: 14px; margin-bottom: 0px; display: block; margin-top:15px;
+}
+.banner img.logo-04 {
+	margin: 50px auto; width: 287px; height: 60px; display: block;
+}
+
+.latest {
+	padding: 0px 30px 0px 0px; margin-top: 0px;
+}
+.latest > div {
+	padding: 20px; margin-bottom: 0px; background-color: rgb(249, 249, 249); 
+}
+.latest-news-list {
+	padding: 0px;
+}
+.latest-news-list li {
+	list-style: none; line-height: 24px; margin-bottom: 20px;
+}
+.latest-news-list li:hover a {
+	color: rgb(0, 64, 152);
+}
+.latest-news-list .data {
+	color: rgb(153, 153, 153);
+}
+.latest-h2 {
+	text-indent: 20px;
+}
+.latest-h2::after {
+	background: rgb(0, 64, 152); left: 0px; width: 4px; height: 100%; bottom: 0px; position: absolute; content: " ";
+}
+
+
+
+
+
+
+ .ny {
+        /*width: 100%;*/
+        padding-bottom: 20px;
+        padding-top: 50px;
+        background-color: #f4f4f4;
+    }
+
+    .ny_k {
+        width: 100%;
+        background-color: #fff;
+        padding: 40px 50px 40px 50px;
+        float: left;
+    }
+
+    .ab_nr {
+        width: 100%;
+        float: left;
+        font-size: 16px;
+        line-height: 30px;
+        color:#333;
+    }
+
+    .ab_nr p {
+        margin-bottom: 5px;
+ font-size: 16px;
+        line-height: 30px;
+    }
+
+    .ny_bt {
+        width: 100%;
+        float: left;
+        margin-bottom: 35px;
+        text-align: center;
+        line-height: 155%;
+    }
+    .ab_fx{
+        float:left;
+        width:100%;
+        font-size:16px;
+        color:#666;
+        line-height: 32px;
+        margin-top:20px;
+    }
+    .ab_fx a{
+        margin-left: 10px;
+    }
+	
+	  .qk_lb .txtk p{
+        font-size:16px;
+    }
+    .sbt{
+        font-size:30px;
+    }
+    .sbt_sub{
+        font-size: 20px;
+    }
+	  .sbt {
+		  color:#084ea2;
+		  padding-top:20px;
+        line-height: 155%;
+        text-align: center;
+        padding-bottom: 15px;
+        border-bottom: solid 1px #ddd;
+    }
+
+    .ssj {
+        width: 100%;
+        float: left;
+        text-align: center;
+        padding: 15px 0px 40px 0px;
+        color: #555;
+    }
+
+    .sgd {
+        width: 100%;
+        float: left;
+        border-top: solid 1px #ddd;
+        padding-top: 15px;
+        font-size: 14px;
+        line-height: 22px;
+        color:#666;
+        margin-top: 10px;
+    }
+    .sgd .ab_fx{
+        float: left;
+    }
+	
+	
+	
+	
+	
+	
+
+@media screen and (min-width:1201px)
+{
+.fengcai {
+	padding-right: 15px !important;
+}
+.list {
+	padding-right: 15px !important;
+}
+}
+
+
+
+
+
+<!--教学列表-->
+	
+	.dj_lb1{
+        width:100%;
+        float:left;
+        margin-bottom: 20px;
+    }
+    .dj_lb1 li{
+        width:98%;
+        float:left;
+        margin-bottom: 0px;
+        border-bottom: solid 1px #ddd;
+        background-color: #fff;
+        color:#666;
+        position:relative;
+        padding:0 120px 0 10px;
+		margin:0 1%;
+    }
+    .dj_lb1 .sj{
+        position:absolute;
+        right:10px;
+        top:0px;
+        line-height: 60px;
+    }
+    .dj_lb1 a{
+        width:100%;
+        height:60px;
+        line-height: 60px;
+        font-size:16px;
+        color:#666;
+        padding-left:20px;
+        position:relative;
+        display: block;
+        text-overflow:ellipsis; overflow:hidden;  white-space: nowrap;
+    }
+    .dj_lb1 a:before{
+        content: '';
+        background-color: #cc0000;
+        width:8px;
+        height:8px;
+        position:absolute;
+        left:0px;
+        top:50%;
+        margin-top: -4px;
+        -moz-border-radius:50%; -webkit-border-radius:50%; border-radius:50%;
+    }
+	.dj_lb1 li:hover{
+    background-color: #084ea2;
+    
+    color:#fff;
+}
+.dj_lb1 li:hover a{
+    color:#fff;
+}
+
+.fy1 {
+        width: 100%;
+        float: left;
+        line-height: 38px;
+        text-align: center;
+		margin-top:30px;
+    }
+
+    .fy1 a {
+        display: inline-block;
+        border: solid 1px #dddddd;
+        padding: 0px 15px;
+        margin: 0px 1px;
+    }
+
+
+.fy1 a:hover,
+.fy1 a.on {
+    background: #cc0000;
+    color: #ffffff;
+    border: solid 1px #cc0000;
+}
+
+
+
+
+
+
+
+
+.panel{border-radius: 0; -webkit-border-radius:0; box-shadow: none;}
+.panel-success{
+	border-top: 3px solid #2f4481;
+}
+.panel-success .panel-body{
+	overflow:hidden;zoom:1;
+	
+	border:1px solid #eee;
+	border-top: 0;
+	padding:10px;
+	padding-bottom:0px;
+	}
+
+.img-width{width: 100%;}
+.panel-group .panel{border-radius: 0; -webkit-border-radius:0; border:0;}
+.panel-heading{padding: 0; border-radius: 0; -webkit-border-radius:0;}
+
+
+.text-green{color: #418757;}
+.text-grey{color: #666;}
+
+.text-nowrap{text-overflow: ellipsis;overflow: hidden;}
+.media,.media-body{overflow:hidden;zoom:1}
+.media,.media .media{
+	margin-top: 0px
+}
+.media:first-child{margin-top:0}
+.media-object{display:block}
+.media-heading{
+	margin: 0 0 5px;
+	font-size: 16px;
+}
+.media>.pull-left{margin-right:10px; float:left;}
+.media>.pull-right{margin-left:10px}
+.media-list{padding-left:0;list-style:none}
+
+.panel-default>.panel-heading{
+	border: 0;
+	border-left: 5px solid #006ec0;
+}
+.panel.panel-default.noboder{
+ border:0;
+}
+.panel-heading{padding:10px 15px;border-bottom:1px solid transparent;border-top-right-radius:3px;border-top-left-radius:3px}
+.panel-heading>.dropdown .dropdown-toggle{color:inherit}
+
+.panel-title{margin-top:0;margin-bottom:0;font-size:18px;color:inherit}
+.panel-title>a{color:inherit}
+.panel-footer{padding:10px 15px;background-color:#f5f5f5;border-top:1px solid #ddd;border-bottom-right-radius:3px;border-bottom-left-radius:3px}
+
+
+
+
+
+.xz_lb1{
+        width:102%;
+        float:left;
+        margin: -1% 0 30px -1%;
+    }
+    .xz_lb1 li{
+        width: 33%;
+        position: relative;
+        padding:1.5%;
+        float:left;
+    }
+
+    .xz_lb1 li a {
+        width: 100%;
+        display: block;
+        background: #fff;
+        position: relative;
+        font-size: 17px;
+        float:left;
+
+    }
+    .xz_lb1 li a:hover{
+        box-shadow:0 4px 8px rgba(0,0,0,.2);
+    }
+    .xz_lb1 .imgk{
+        width:100%;
+        float:left;
+        height:220px;
+    }
+
+    .xz_lb1 .imgk img{
+        width:100%;
+        display: block;
+      
+height:220px;
+    }
+    .xz_lb1 .txtk{
+        width:100%;
+        float:left;
+        padding:10px 10px;
+    }
+    .xz_lb1 .txtk h3{
+		font-size:15px;
+        margin-bottom: 0px;
+        width:100%;
+        float:left;
+line-height:27px;
+        height:60px;
+		
+    }
+    .xz_lb1 .txtk p{
+		font-size:16px;
+        color:#666;
+        height:80px;
+        line-height: 30px;
+        width:100%;
+        float:left;
+    }
+	
+	
+	
+	
+	
+	
+	/*
+	视频
+	*/
+	
+	
+
+.xz_lb2{
+        width:102%;
+        float:left;
+        margin: -1% 0 30px -1%;
+    }
+    .xz_lb2 li{
+        width: 33%;
+        position: relative;
+        padding:1.5%;
+        float:left;
+    }
+
+    .xz_lb2 li a {
+        width: 100%;
+        display: block;
+        background: #fff;
+        position: relative;
+        font-size: 17px;
+        float:left;
+    }
+    .xz_lb2 li a:hover{
+        box-shadow:0 4px 8px rgba(0,0,0,.2);
+    }
+    .xz_lb2 .imgk{
+        width:100%;
+        float:left;
+        height:170px;
+    }
+
+    .xz_lb2 .imgk img{
+        width:100%;
+        display: block;
+height:170px;
+    }
+    .xz_lb2 .txtk{
+        width:100%;
+        float:left;
+        padding:10px 10px;
+    }
+    .xz_lb2 .txtk h3{
+		font-size:15px;
+        margin-bottom: 0px;
+        width:100%;
+        float:left;
+line-height:27px;
+        height:60px;
+    }
+    .xz_lb2 .txtk p{
+		font-size:16px;
+        color:#666;
+        height:80px;
+        line-height: 30px;
+        width:100%;
+        float:left;
+    }
+	
+	
+	
+	
+	
+	
+	
+@media screen and (max-width:998px)
+{
+	.banner {
+	background: url("/jeefast/img/bn-1.png") no-repeat center / cover; padding: 0px; height: 240px; margin-top: 0px; margin-bottom: 0px;
+}
+	
+}

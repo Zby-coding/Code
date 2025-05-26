@@ -1,0 +1,349 @@
+.lat-box {
+	width: 100%; height: auto; min-height:550px; display: block; position: relative;  background-color: rgb(249, 249, 249);
+}
+.lat-box > div {
+	left: 0px; top: -60px; width: 100%; position: absolute; background-color: rgb(249, 249, 249);
+}
+.lat-box .lat-box-li {
+	width: 100%; height: 60px; text-align: center; color: rgb(51, 51, 51); line-height: 60px; letter-spacing: 0.3px;  font-size: 16px; display: block;
+}
+.lat-box-li-first {
+	width: 100%; height: 60px; text-align: center; color: rgb(51, 51, 51); line-height: 60px; letter-spacing: 0.3px;  font-size: 22px; display: block;
+}
+.lat-box .lat-box-li {
+	border-left-color: rgb(204, 204, 204); border-left-width: 4px; border-left-style: solid;
+}
+.lat-box-li-first {
+	background:rgb(0, 64, 152);
+}
+.lat-box .lat-box-li-active {
+	color: rgb(0, 28, 62); border-left-color: rgb(0, 64, 152); border-left-width: 4px; border-left-style: solid;background-color: rgb(240, 240, 240);
+}
+.lat-box .lat-box-li:hover {
+	color: rgb(0, 28, 62); border-left-color: rgb(0, 64, 152); border-left-width: 4px; border-left-style: solid; background-color: rgb(240, 240, 240);
+}
+
+
+
+
+
+.lat-box .lat-box-li2 {
+	width: 100%; height: 40px; text-align: center; color: rgb(51, 51, 51); line-height: 40px; letter-spacing: 0.3px;  font-size: 14px; display: block;
+}
+
+.lat-box .lat-box-li2 {
+	 background-color: rgb(230, 230, 230);
+	border-left-color: rgb(224, 224, 224); border-left-width: 4px; border-left-style: solid;
+}
+.lat-box .lat-box-li2:hover {
+	color: rgb(0, 28, 62); border-left-color: rgb(0, 64, 152); border-left-width: 4px; border-left-style: solid; background-color: rgb(240, 240, 240);
+}
+
+
+
+.fengcai {
+	padding: 0px;padding-left: 15px;
+}
+@media screen and (min-width:1201px)
+{
+.fengcai {
+	padding-left: 15px;
+}
+}
+.fengcai-title {
+	margin: 30px 0px; padding: 0px 0px 20px; color: rgb(51, 51, 51); line-height: 1.5; letter-spacing: 0px; font-family: PingFangSC-Semibold,Microsoft YaHei; font-size: 24px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid; position: relative;
+}
+.boundary {
+	display: inline-block; position: relative;
+}
+.boundary::after {
+	background: rgb(0, 64, 152); left: 0px; width: 100%; height: 4px; bottom: -20px; position: absolute; content: " ";
+}
+.fengcai-title::after {
+	background: rgb(0, 64, 152); left: 0px; width: 97px; height: 4px; bottom: 0px; position: absolute; content: " ";
+}
+.fengcai-sub-title {
+	height: 22px; text-align: justify; color: rgb(51, 51, 51); text-indent: 14px; letter-spacing: 0.41px; font-family: PingFangSC-Semibold,Microsoft YaHei; font-size: 20px; border-left-color: rgb(0, 64, 152); border-left-width: 4px; border-left-style: solid;
+}
+.fengcai-txt {
+	text-align: justify; color: rgb(51, 51, 51); line-height: 38px; text-indent: 2em; letter-spacing: 0.33px; font-family: PingFangSC-Regular,Microsoft YaHei; font-size: 16px; margin-bottom: 0px;
+}
+.fengcai-txt-phone {
+	text-align: justify; color: rgb(51, 51, 51); line-height: 38px; text-indent: 2em; letter-spacing: 0.33px; font-family: PingFangSC-Regular,Microsoft YaHei; font-size: 16px; margin-bottom: 0px;
+}
+.fengcai .TRS_Editor p {
+	text-align: justify; color: rgb(51, 51, 51); line-height: 38px; text-indent: 2em; letter-spacing: 0.33px; font-family: PingFangSC-Regular,Microsoft YaHei; font-size: 16px; margin-bottom: 0px;
+}
+.xy p {
+	text-align: justify; color: rgb(51, 51, 51); line-height: 38px; text-indent: 2em; letter-spacing: 0.33px; font-family: PingFangSC-Regular,Microsoft YaHei; font-size: 16px; margin-bottom: 0px;
+}
+.fengcai .TRS_Editor p {
+	
+}
+.xy p {
+	text-indent: 0em;
+}
+.fengcai-txt-phone {
+	color: rgb(153, 153, 153); line-height: 36px; text-indent: 0em; border-top-color: rgb(153, 153, 153); border-top-width: 1px; border-top-style: solid;
+}
+.fengcai-swiper {
+	overflow: hidden; position: relative;
+}
+.fengcai .swiper-container {
+	width: 100%; max-height: 477px;
+}
+.swiper-img {
+	width: 100%; height: 100%; display: block;
+}
+.pageing {
+	background: rgb(0, 0, 0); margin: 0px; border-radius: 0px; width: 100%; height: 93px; text-align: center; padding-top: 12px; position: relative;
+}
+.page-thumbs {
+	margin: 0px 65px; height: 70px; overflow: hidden;
+}
+.swiper-thumbs .swiper-slide {
+	width: 127px; height: 70px; margin-right: 10px; float: left; box-sizing: border-box; opacity: 0.4;
+}
+.swiper-thumbs .swiper-slide-active {
+	border: 1px solid yellow; border-image: none; opacity: 1;
+}
+.pagination {
+	margin: 0px;
+}
+.pageing .next {
+	border: 1px solid rgb(255, 255, 255); border-image: none; left: 15px; top: 50%; width: 36px; height: 36px; color: rgb(255, 255, 255); line-height: 32px; font-size: 20px; margin-top: -18px; position: absolute; cursor: pointer; opacity: 0.5;
+}
+.pageing .prev {
+	border: 1px solid rgb(255, 255, 255); border-image: none; left: 15px; top: 50%; width: 36px; height: 36px; color: rgb(255, 255, 255); line-height: 32px; font-size: 20px; margin-top: -18px; position: absolute; cursor: pointer; opacity: 0.5;
+}
+.pageing .next {
+	left: auto; right: 15px;
+}
+.pageing .next:hover {
+	opacity: 1;
+}
+.pageing .prev:hover {
+	opacity: 1;
+}
+.swiper-pagination-switch {
+	background: rgb(85, 85, 85); margin: 0px 5px; border-radius: 8px; border: 1px solid rgb(255, 255, 255); border-image: none; width: 8px; height: 8px; display: inline-block; cursor: pointer; opacity: 0.8;
+}
+.swiper-active-switch {
+	background: rgb(255, 255, 255);
+}
+.margin-b-50 {
+	margin-bottom: 50px;
+}
+.latest {
+	position: relative;
+}
+.latest-h2 {
+	color: rgb(51, 51, 51); letter-spacing: 0px; font-family: PingFangSC-Semibold,Microsoft YaHei; font-size: 20px; margin-bottom: 20px; display: block; position: relative;
+}
+.latest-h2 i {
+	color: rgb(106, 136, 176); letter-spacing: 0.41px; font-family: PingFangSC-Light,Microsoft YaHei; font-size: 20px; font-style: normal; margin-left: 13px;
+}
+.latest-list {
+	padding-left: 0px;
+}
+.latest-list li {
+	width: 100%; text-align: justify; color: rgb(51, 51, 51); line-height: 33px; letter-spacing: 0px; overflow: hidden; padding-left: 22px; font-family: PingFangSC-Regular,Microsoft YaHei; font-size: 14px; display: inline-block; white-space: nowrap; position: relative; -ms-text-overflow: ellipsis;
+}
+.latest-list li a {
+	color: rgb(51, 51, 51);
+}
+.latest-list li::after {
+	background: rgb(102, 102, 102); border-radius: 50%; left: 0px; top: 12px; width: 8px; height: 8px; position: absolute; content: " ";
+}
+.latest-list li:first-child::after {
+	background: url("../resources/static/img/images/icon-1.png"); border-radius: 0%; top: 10px; width: 13px; height: 13px;
+}
+.latest-list li:first-child {
+	color: rgb(0, 64, 152);
+}
+.paging {
+	margin: 40px 0px; text-align: center; display: block;
+}
+.paging1 {
+	margin-top: 38px;
+}
+.paging a {
+	border: 1px solid rgb(204, 204, 204); border-image: none; height: 28px; text-align: center; color: rgb(51, 51, 51); line-height: 26px; letter-spacing: 0px; font-family: PingFangSC-Regular,Microsoft YaHei; font-size: 14px; margin-left: 10px; display: inline-block; white-space: normal; min-width: 28px;
+}
+.paging span {
+	padding: 0px 17px;
+}
+.paging a.pre {
+	margin-right: 10px; margin-left: 30px;
+}
+.paging a.active {
+	background: rgb(0, 64, 152); color: rgb(255, 255, 255);
+}
+.paging a:hover {
+	background: rgb(0, 64, 152); color: rgb(255, 255, 255);
+}
+.paging a.next {
+	padding: 0px 35px;
+}
+.paging a.pre {
+	padding: 0px 35px;
+}
+.paging .more {
+	padding: 0px 40px; height: 34px; line-height: 34px;
+}
+.share-box {
+	padding: 10px 20px; width: 100%; overflow: hidden; display: block; position: relative; background-color: rgb(244, 247, 252);
+}
+.share-box span {
+	overflow: hidden; display: inline-block;
+}
+.share-box span > a {
+	background: none !important; width: 100% !important; position: absolute;
+}
+.share-box .share-title {
+	margin: 0px; text-align: center; color: rgb(153, 153, 153); line-height: 28px; letter-spacing: 1px; font-family: PingFangSC-Regular,Microsoft YaHei; font-size: 16px; float: left; position: relative;
+}
+.share-box a {
+	line-height: 25px; font-style: normal;
+}
+.share-box-title {
+	margin: 0px 0px 20px; color: rgb(15, 64, 128); text-indent: 14px; letter-spacing: 0px; font-family: PingFangSC-Semibold,Microsoft YaHei; font-size: 14px; display: block;
+}
+.pull-right em {
+	color: rgb(204, 204, 204); font-style: normal; margin-right: 8px;
+}
+.pull-right i {
+	color: rgb(204, 204, 204); font-size: 20px; font-style: normal; margin-right: 8px; cursor: pointer;
+}
+.pull-right i:nth-child(2) {
+	font-size: 16px;
+}
+.pull-right i:nth-child(3) {
+	font-size: 18px;
+}
+.pull-right .act {
+	color: rgb(21, 21, 21);
+}
+.lat-box-li-first {
+	color: rgb(255, 255, 255); font-size: 22px;
+}
+.fengcai-img {
+	text-align: center; font-size: 0px; margin-bottom: 20px; position: relative;
+}
+.fengcai-img .shade-box {
+	width: 263px; height: 317px; text-align: left; color: rgb(255, 255, 255); vertical-align: middle; display: inline-block; position: relative; background-color: rgb(13, 58, 120);
+}
+.shade-box i {
+	font-style: normal; display: block;
+}
+.shade-box a {
+	font-style: normal; display: block;
+}
+.shade-box i {
+	line-height: 20px;
+}
+.shade-box .desc {
+	margin: 18px 0px; opacity: 0.9;
+}
+.shade-box .more {
+	border: 1px solid rgb(255, 255, 255); border-image: none; width: 96px; text-align: center; line-height: 38px; margin-top: 20px; opacity: 0.6;
+}
+.shade-box .more:hover {
+	background: rgba(255, 255, 255, 0.2); opacity: 1;
+}
+.fengcai-img img {
+	width: 541px; height: 317px;
+}
+.fengcai-img-2 {
+	margin: 0px auto 20px; padding-bottom: 65px; position: relative; max-width: 814px;
+}
+.fengcai-img-2 .shade-box {
+	left: 0px; width: 361px; height: 230px; bottom: 0px; color: rgb(255, 255, 255); position: absolute; background-color: rgb(13, 58, 120);
+}
+.fengcai-img-2 .img {
+	width: 585px; height: 345px;
+}
+.shade-box .shade-text {
+	left: 30px; bottom: 30px; padding-right: 60px; position: absolute;
+}
+.xueyuan-link {
+	padding: 0px 15px; text-align: center; color: rgb(255, 255, 255); line-height: 50px; overflow: hidden; font-size: 16px; margin-top: 5px; display: inline-block; white-space: nowrap; -ms-text-overflow: ellipsis; background-color: rgb(0, 64, 152);
+}
+.keyan-link {
+	border: 1px solid rgb(204, 204, 204); border-image: none; width: 100%; text-align: center; color: rgb(0, 64, 152); line-height: 80px; font-size: 16px; margin-bottom: 30px; display: block; background-color: rgb(238, 238, 238);
+}
+.xueyuan-link:hover {
+	color: rgb(255, 255, 255); background-color: rgb(8, 58, 124);
+}
+.xueyuan-img {
+	margin: 0px auto 20px; max-width: 640px;
+}
+.xueyuan-img img {
+	width: 100%;
+}
+.xy {
+	margin-bottom: 30px; position: relative;
+}
+.xy .img {
+	width: 55.5%; height: 0px; padding-bottom: 36.5%; position: relative;
+}
+.xy .img img {
+	left: 0px; top: 0px; width: 100%; height: 100%; position: absolute;
+}
+.xy .abs {
+	padding: 60px 50px 0px; top: 0px; width: 44.5%; height: 100%; right: 0px; position: absolute; background-color: rgb(244, 248, 253);
+}
+.xy .abs p {
+	text-align: left; overflow: hidden; -webkit-line-clamp: 4; -webkit-box-orient: vertical;
+}
+.history-img {
+	width: 100%; margin-bottom: 20px;
+}
+.history .share-box {
+	width: 240px; margin-top: -10px;
+}
+.history .share-box .share-title {
+	line-height: 2.5;
+}
+.bolder.fengcai-txt {
+	text-indent: 0px;
+}
+.item.fengcai-txt {
+	text-indent: 4em;
+}
+.process {
+	background: url("../resources/static/img/images/process.png") no-repeat left / 20px 100%;
+}
+.process .fengcai-txt {
+	text-indent: 0em; padding-bottom: 8px; margin-bottom: 12px; margin-left: 2em;
+}
+.process .border {
+	border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.fengcai-txt .fa {
+	width: 18px; text-align: center; line-height: 18px; text-indent: 0em; margin-right: 0.8em; display: inline-block;
+}
+
+
+
+@media screen and (max-width:1200px)
+{
+.lat-box {
+	width: 100%; height: auto; min-height:330px; display: block; position: relative;  background-color: rgb(249, 249, 249);
+}
+}
+
+@media screen and (max-width:767px)
+{
+	.fengcai {
+	padding: 0px;
+}
+	.lat-box .lat-box-li {
+	width: 100%; height: 60px; text-align: center; color: rgb(51, 51, 51); line-height: 60px; letter-spacing: 0.3px;  font-size: 16px; display: none;
+}
+
+.lat-box {
+	width: 100%; height: auto; min-height:550px; display:none; position: relative;  background-color: rgb(249, 249, 249);
+}
+
+}

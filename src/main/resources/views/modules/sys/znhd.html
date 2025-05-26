@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>智能回答管理</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../plugins/jqgrid/ui.jqgrid-bootstrap.css">
+    <link rel="stylesheet" href="../../plugins/ztree/css/metroStyle/metroStyle.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <script src="../../libs/jquery.min.js"></script>
+    <script src="../../plugins/layer/layer.js"></script>
+    <script src="../../libs/bootstrap.min.js"></script>
+    <script src="../../libs/vue.min.js"></script>
+    <script src="../../plugins/jqgrid/grid.locale-cn.js"></script>
+    <script src="../../plugins/jqgrid/jquery.jqGrid.min.js"></script>
+    <script src="../../plugins/ztree/jquery.ztree.all.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../plugins/laydate/laydate.js"></script>
+    <script src="../../libs/jquery/jquery.PrintArea.min.js"></script>
+
+    <link href="../../js/summernote/summernote.css" rel="stylesheet">
+    <script src="../../js/summernote/summernote.js"></script>
+    <script src="../../js/summernote/summernote.min.js"></script>
+</head>
+
+<body>
+<div id="rrapp" v-cloak>
+    <div v-show="showList">
+        <div class="grid-btn">
+            <div class="form-group col-sm-2">
+                <input type="text" class="form-control" v-model="q.name" @keyup.enter="query" placeholder="标题关键词">
+            </div>
+            <div class="form-group col-sm-2">
+                <select class="form-control" v-model="q.type">
+                    <option value="">选择类型</option>
+                    <option value="科技">科技</option>
+                    <option value="新闻">新闻</option>
+                    <option value="娱乐">娱乐</option>
+                    <option value="体育">体育</option>
+                    <option value="财经">财经</option>
+                    <option value="河南">河南</option>
+                    <option value="文化">文化</option>
+                </select>
+            </div>
+            <a class="btn btn-default" @click="reload">查询</a>
+            <a class="btn btn-primary" @click="crawlNews" :disabled="crawling">
+                <i class="fa fa-plus"></i>&nbsp;爬取新闻
+            </a>
+        </div>
+        <table id="jqGrid"></table>
+        <div id="jqGridPager"></div>
+    </div>
+</div>
+
+<script>
+    // 在文件顶部添加基础路径配置
+    const BASE_API = '/jeefast/';
+    $(function () {
+        let vm = new Vue({
+            el: '#rrapp',
+            data: {
+                showList: true,
+                title: null,
+                znhd: {},
+                q: {
+                    name: null,
+                    type: null
+                },
+                crawling: false
+            },
+            methods: {
+                crawlNews: function () {
+                    vm.crawling = true;
+                    $.ajax({
+                        type: "GET",
+                        url: BASE_API + '/sys/znhd/crawlNews',
+                        contentType: "application/json",
+                        data: {
+                            name: vm.q.name,
+                            type: vm.q.type
+                        },
+                        success: function (r) {
+                            if (r.code === 0) {
+                                alert('成功爬取' + r.count + '条新闻');
+                                vm.reload();
+                            } else {
+                                alert(r.msg);
+                            }
+                            vm.crawling = false;
+                        },
+                        error: function () {
+                            alert('爬取失败');
+                            vm.crawling = false;
+                        }
+                    });
+                },
+                reload: function (event) {
+                    vm.showList = true;
+                    let page = $("#jqGrid").jqGrid('getGridParam', 'page');
+                    $("#jqGrid").jqGrid('setGridParam', {
+                        postData: {
+                            'name': vm.q.name,
+                            'type': vm.q.type
+                        },
+                        page: page
+                    }).trigger("reloadGrid");
+                }
+            }
+        });
+
+        $("#jqGrid").jqGrid({
+            url: BASE_API + 'sys/znhd/list',
+            datatype: "json",
+            mtype: 'GET',
+            colModel: [
+                { label: 'ID', name: 'id', hidden: true },
+                {
+                    label: '标题',
+                    name: 'name',
+                    width: 200,
+                    formatter: function(cellvalue, options, rowObject) {
+                        return '<a href="'+rowObject.pcurl+'" target="_blank">'+cellvalue+'</a>';
+                    }
+                },
+                { label: '类型', name: 'type', width: 80 },
+                { label: '创建时间', name: 'createtime', width: 150 },
+                {
+                    label: '原文链接',
+                    name: 'pcurl',
+                    width: 150,
+                    formatter: function(cellvalue, options, rowObject) {
+                        return '<a href="'+rowObject.pcurl+'" target="_blank">查看原文</a>';
+                    }
+                },
+                { label: '内容', name: 'content', width: 400 }
+            ],
+            viewrecords: true,
+            height: 385,
+            rowNum: 10,
+            rowList: [10, 30, 50, 100],
+            pager: "#jqGridPager",
+            jsonReader: {
+                root: "page.records",
+                page: "page.current",
+                total: "page.pages",
+                records: "page.total"
+            },
+            prmNames: {
+                page: "page",
+                rows: "limit",
+                order: "order"
+            },
+            gridComplete: function () {
+                $("#jqGrid").closest(".ui-jqgrid-bdiv").css({ "overflow-x": "hidden" });
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

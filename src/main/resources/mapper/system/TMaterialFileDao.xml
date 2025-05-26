@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.jeefast.system.dao.TMaterialFileDao">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="cn.jeefast.system.entity.TMaterialFile">
+		<result column="id" property="id" />
+		<result column="smodelidstate" property="smodelidstate" />
+		<result column="sfilename" property="sfilename" />
+		<result column="sfilelength" property="sfilelength" />
+		<result column="saccessoryname" property="saccessoryname" />
+		<result column="parentid" property="parentid" />
+	</resultMap>
+
+	<select id="queryPageList" resultType="cn.jeefast.system.entity.TMaterialFile">
+			select * from tb_scms_file t
+			<where>
+				delete = '0'
+				<if test="groupId!=null">
+			     	and t.group_id=#{groupId}
+			     </if>
+			     <if test="themeId!=null">
+			     	and t.theme_id=#{themeId}
+			     </if>
+			    <if test="mold != null and mold.trim() != ''">
+			    	and t.mold like concat('%',#{mold},'%')
+			    </if>
+			</where>
+			<!-- order by create_time -->
+    </select>
+   
+   <update id="deleteBatch">
+   		update tb_scms_file set delete = '1' where id in 
+		<foreach item="ids" collection="array" open="(" separator="," close=")">
+			#{ids}
+		</foreach>
+   </update>
+</mapper>

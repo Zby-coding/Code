@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>多分类搜索平台</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/AdminLTE.min.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="css/all-skins.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+    <![endif]-->
+
+    <style type="text/css">
+        .LoginImg{
+            background: url(/jeefast/img/20530710.jpg) no-repeat  center fixed;
+            background-size:contain;
+            background-size:100% 100%
+        }
+        .middle {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 8%;
+        }
+        .radius{-webkit-border-radius: 0;    -moz-border-radius: 0;    border-radius: 0;}
+        .login-box-body{
+            background: rgba(220,38,38,0.2);
+            color:#ffffff;
+        }
+        .register-box-body{
+            background: rgba(220,38,38,0.2);
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body class="hold-transition login-page LoginImg" style="border: #0d6aad 0px solid; ">
+<div class="login-box" id="rrapp" v-cloak style="border:0px solid red;margin-left:41%;margin-top:10%;" >
+    <div class="login-logo">
+        <b>多分类搜索平台</b><!-- 快速开发平台 -->
+    </div>
+    <!-- /.login-logo -->
+    <div v-if="!showLogin" class="login-box-body" style="border:0px solid green;">
+        <p class="login-box-msg" style="color: #ffffff">用户登录</p>
+        <div v-if="error" class="alert alert-danger alert-dismissible">
+            <h4 style="margin-bottom: 0px;"><i class="fa fa-exclamation-triangle"></i> {{errorMsg}}</h4>
+        </div>
+        <div class="form-group has-feedback">
+            <input type="text" class="form-control" v-model="username" style="background-color:transparent;border-radius:10px;border:1px solid #DBDBDB;color: #000000" placeholder="账号">
+            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+        </div>
+        <div class="form-group has-feedback">
+            <input type="password" class="form-control" v-model="password" style="background-color:transparent;border-radius:10px;border:1px solid #DBDBDB;;color: #000000" placeholder="密码">
+            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+        </div>
+        <div class="form-group has-feedback">
+            <input type="text" class="form-control" v-model="captcha" style="background-color:transparent;border-radius:10px;border:1px solid #DBDBDB;;color: #000000" @keyup.enter="login" placeholder="验证码">
+            <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+        </div>
+        <div class="form-group has-feedback">
+            <img style="background-color:transparent;"  alt="如果看不清楚，请单击图片刷新！" class="pointer" :src="src" @click="refreshCode">
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:;" @click="refreshCode">点击刷新</a>
+        </div>
+       <!-- <div style="float:left">选择角色：&nbsp;&nbsp;
+            <input type="radio"  name="sex" value="3">普通用户&nbsp;&nbsp;
+&lt;!&ndash;            <input type="radio"  name="sex" value="2">老师&nbsp;&nbsp;&ndash;&gt;
+            <input type="radio"  name="sex" value="4">管理员&nbsp;&nbsp;
+            <input type="radio"  name="sex" value="5">维修员
+        </div>-->
+
+
+        <div class="row" >
+            <button type="button" class="btn btn-primary btn-block btn-flat" style="float:right" @click="login">登录</button>
+            <button type="button" class="btn btn-primary btn-block btn-flat" style="float:left" @click="regt">注册</button>
+
+
+            <!--            <div class="col-xs-4" >-->
+<!--                </div>-->
+<!--            <div class="col-xs-8">-->
+<!--                <div class="checkbox icheck">-->
+<!--                </div>-->
+<!--            </div>-->
+            <!-- /.col -->
+
+            <!-- /.col -->
+        </div>
+        <!-- /.social-auth-links -->
+
+    </div>
+
+    <div v-if="showLogin" class="login-box-body" style="border:0px solid green;">
+        <p class="login-box-msg" style="color: #ffffff">注册</p>
+        <div v-if="error" class="alert alert-danger alert-dismissible">
+            <h4 style="margin-bottom: 0px;"><i class="fa fa-exclamation-triangle"></i> {{errorMsgreg}}</h4>
+        </div>
+        <div class="form-group has-feedback">
+            <input type="text" class="form-control" v-model="susername" style="background-color:transparent;border-radius:10px;border:1px solid #DBDBDB;color: #ffffff;" placeholder="请输入账号">
+            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+        </div>
+        <div class="form-group has-feedback">
+            <input type="password" class="form-control" v-model="spassword" style="background-color:transparent;border-radius:10px;border:1px solid #DBDBDB;color: #ffffff;" placeholder="请输入密码">
+            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+        </div>
+
+        <div class="form-group has-feedback">
+            <input type="password" class="form-control" v-model="zcspassword" style="background-color:transparent;border-radius:10px;border:1px solid #DBDBDB;color: #ffffff;" placeholder="请再次输入密码">
+            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+        </div>
+
+        <div class="row" >
+            <button type="button" class="btn btn-primary btn-block btn-flat" style="float:right" @click="fh">返回</button>
+            <button type="button" class="btn btn-primary btn-block btn-flat" style="float:left" @click="regsave">注册</button>
+
+        </div>
+
+<!--        <div class="row">-->
+<!--            <div class="col-xs-8">-->
+<!--                <div class="checkbox icheck">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash; /.col &ndash;&gt;-->
+<!--            <div class="col-xs-4">-->
+<!--                <button type="button" class="btn btn-primary btn-block btn-flat" @click="fh">返回</button>-->
+<!--                <button type="button" class="btn btn-primary btn-block btn-flat" @click="regsave">注册</button>-->
+<!--            </div>-->
+<!--            &lt;!&ndash; /.col &ndash;&gt;-->
+<!--        </div>-->
+        <!-- /.social-auth-links -->
+
+    </div>
+    <!-- /.login-box-body -->
+</div>
+<!-- /.login-box -->
+<script src="libs/jquery.min.js"></script>
+<script src="plugins/jqgrid/jquery.jqGrid.min.js"></script>
+<script src="libs/vue.min.js"></script>
+<script src="libs/bootstrap.min.js"></script>
+<script src="libs/app.js"></script>
+<script src="js/common.js"></script>
+<script type="text/javascript">
+    var vm = new Vue({
+        el:'#rrapp',
+        data:{
+            showLogin:false,
+            username: '',
+            password: '',
+            captcha: '',
+            error: false,
+            errorMsg: '',
+            errorMsgreg:'',
+            src: 'captcha.jpg',
+            sxh:'',
+            sname:'',
+            xzraol:'',
+            susername:'',
+            spassword:'',
+            college:'',
+            major:'',
+            classinfo:'',
+            grade:'',
+            zcspassword:'',
+
+
+        },
+        beforeCreate: function(){
+            if(self != top){
+                top.location.href = self.location.href;
+            }
+        },
+        methods: {
+            refreshCode: function(){
+                this.src = "captcha.jpg?t=" + $.now();
+            },
+            regsave:function(){
+                var data = "zcspassword="+vm.zcspassword+"&susername="+vm.susername+"&spassword="+vm.spassword;
+
+                $.ajax({
+                    type: "POST",
+                    url: baseURL + "sys/regsave",
+                    data: data,
+                    dataType: "json",
+                    success: function(r){
+                        if(r.code == 0){//登录成功
+                            // localStorage.setItem("token", r.token);
+                            // parent.location.href ='index.html';
+                            // vm.errorMsg = r.msg;
+                            vm.errorMsgreg = r.msg;
+                        }else{
+                            vm.error = true;
+                            vm.errorMsgreg = r.msg;
+                        }
+                    }
+                });
+                console.log('aaaaaaaaaaaa'+data)
+            },
+            fh:function(){
+                vm.showLogin=false;
+            },
+            regt: function(){
+                vm.showLogin=true;
+            },
+            login: function () {
+                var data = "username="+vm.username+"&password="+vm.password+"&captcha="+vm.captcha;
+                $.ajax({
+                    type: "POST",
+                    url: baseURL + "sys/login",
+                    data: data,
+                    dataType: "json",
+                    success: function(r){
+                        if(r.code == 0){//登录成功
+                            localStorage.setItem("token", r.token);
+                            // parent.location.href ='index.html';
+                            parent.location.href ='shiyan.html';
+                        }else{
+                            vm.error = true;
+                            vm.errorMsg = r.msg;
+                        }
+                    }
+                });
+            }
+        }
+    });
+</script>
+</body>
+</html>

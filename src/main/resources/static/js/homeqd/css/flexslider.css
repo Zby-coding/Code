@@ -1,0 +1,93 @@
+.flex-container a:active {}
+.flexslider a:active {}
+.flex-container a:focus {}
+.flexslider a:focus {}
+.slides {
+	list-style: none; margin: 0px; padding: 0px;}
+.flex-control-nav {
+	list-style: none; margin: 0px; padding: 0px;}
+.flex-direction-nav {
+	list-style: none; margin: 0px; padding: 0px;}
+.flexslider {
+	margin: 0px; padding: 0px; }
+.flexslider .slides > li {
+	vertical-align: middle; display: table; -webkit-backface-visibility: hidden;}
+.flexslider .slides img {
+	width: 100%;}
+.flex-pauseplay span {
+	text-transform: capitalize;}
+.slides::after {
+	height: 0px; line-height: 0; clear: both; display: block; visibility: hidden; content: "\0020";}
+html[xmlns] .slides {
+	display: block;}
+* html .slides {
+	height: 1%;}
+.no-js .slides > li:first-child {
+	display: block;}
+.flexslider {
+	position: relative; -ms-zoom: 1;}
+.flex-viewport {
+	transition:1s; max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease;}
+.loading .flex-viewport {
+	max-height: 300px;}
+.flexslider .slides {
+	-ms-zoom: 1;}
+.carousel li {
+	margin-right: 5px;}
+.flex-direction-nav {}
+.flex-direction-nav a {
+	margin: -25px 0px 0px; transition:0.2s ease-in-out; top: 50%; width: 50px; height: 50px; color: rgb(255, 255, 255); font-size: 47px; text-decoration: none; display: block; position: absolute; z-index: 10; cursor: pointer; opacity: 0.8;}
+.flexslider .flex-prev {
+	left: 20px;}
+.flexslider .flex-next {
+	right: 20px;}
+.flexslider:hover .flex-next {
+	opacity: 1;}
+.flexslider:hover .flex-prev {
+	opacity: 1;}
+.flex-direction-nav .flex-disabled {
+	cursor: default; opacity: 0 !important;}
+.flexslider .slides > li h4 {
+	left: 0px; width: 100%; height: 50px; text-align: center; bottom: 0px; color: rgb(255, 255, 255); line-height: 50px; font-size: 2rem; font-weight: normal; position: absolute; z-index: 9998;}
+.flex-pauseplay a {
+	background: rgb(221, 221, 221); left: 10px; width: 20px; height: 20px; bottom: 5px; color: rgb(0, 0, 0); overflow: hidden; display: block; position: absolute; z-index: 10; cursor: pointer; opacity: 0.8;}
+.flex-pauseplay a::before {
+	font-family: "flexslider-icon"; font-size: 20px; display: inline-block; content: "\f004";}
+.flex-pauseplay a:hover {
+	opacity: 1;}
+.flex-pauseplay a.flex-play::before {
+	content: "\f003";}
+.flex-control-nav {
+	left: 50%; width: 300px; text-align: right; bottom: 34px; margin-left: 300px; position: absolute; z-index: 600;}
+.flex-control-nav li {
+	margin: 0px 8px; text-align: left; display: inline-block; -ms-zoom: 1;}
+.flex-control-paging li a {
+	width: 9px; height: 9px; text-indent: -999em; display: block; cursor: pointer; transform: rotate(45deg); background-color: rgb(255, 255, 255);}
+.flex-control-paging li a:hover {
+	background: rgb(0, 54, 111);}
+.flex-control-paging li a.flex-active {
+	background: rgb(0, 54, 111); cursor: default;}
+.flex-control-thumbs {
+	margin: 5px 0px 0px; overflow: hidden; position: static;}
+.flex-control-thumbs li {
+	margin: 0px; width: 25%; float: left;}
+.flex-control-thumbs img {
+	width: 100%; display: block; cursor: pointer; opacity: 0.7;}
+.flex-control-thumbs img:hover {
+	opacity: 1;}
+.flex-control-thumbs .flex-active {
+	cursor: default; opacity: 1;}
+.close_btn {
+	top: 20px; right: 20px; position: absolute; z-index: 99999;}
+.slide-img {
+	width: 100%; height: 0px; overflow: hidden; padding-bottom: 29.19%; display: block; position: relative;}
+.slide-bg2 {
+	 left: 0px; top: 0px; width: 100%; height: 161px; position: absolute; z-index: 0;}
+.slide-title {
+	transition:0.6s; left: 50%; width: auto; bottom: -120px; margin-left: -700px; position: absolute; background-color: rgba(0,78,162,0.7);}
+.slide-title a {
+	padding: 0px 15px; height: 50px; color:#fff; line-height: 50px; font-size: 28px; display: block; position: relative; z-index: 1;}
+.slide-bg {
+	 left: 0px; width: 100%; height: 65px; bottom: 0px; position: absolute; z-index: -99;}
+.flexslider .slides > li.flex-active-slide .slide-title {
+	bottom: 30px;}

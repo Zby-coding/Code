@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.jeefast.system.dao.SysZnhdDao">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="cn.jeefast.system.entity.SysZnhd">
+		<id column="id" property="id" />
+		<result column="name" property="name" />
+		<result column="content" property="content" />
+		<result column="createtime" property="createtime" />
+		<result column="updatetime" property="updatetime" />
+		<result column="createuser" property="createuser" />
+		<result column="updateuser" property="updateuser" />
+	</resultMap>
+	<!-- 添加分页查询SQL -->
+	<select id="selectZnHdList" resultType="cn.jeefast.system.entity.SysZnhd">
+		SELECT *
+		FROM sys_znhd
+		<where>
+			<if test="params.name != null and params.name != ''">
+				AND name LIKE CONCAT('%', #{params.name}, '%')
+			</if>
+			<if test="params.type != null and params.type != ''">
+				AND type = #{params.type}
+			</if>
+		</where>
+		ORDER BY create_time DESC
+	</select>
+
+	<delete id="deleteBatch">
+		delete from sys_znhd where id in
+		<foreach item="ids" collection="array" open="(" separator="," close=")">
+			#{ids}
+		</foreach>
+	</delete>
+	<select id="queryPageList" resultType="cn.jeefast.system.entity.SysZnhd">
+		select r.*,st.name zylxname  from sys_znhd r
+		left join sys_type st
+		on r.zylx = st.id
+		<where>
+			<if test="name != null and name.trim() != ''">
+				and r.`name` like concat('%',#{name},'%')
+			</if>
+		</where>
+		order by r.updatetime desc
+	</select>
+</mapper>

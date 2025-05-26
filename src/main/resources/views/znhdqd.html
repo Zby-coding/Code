@@ -1,0 +1,548 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" by:nzcms·ningzhi.net
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/ico" href="nz.ico">
+    <link href="js/home/css/css.css" rel="stylesheet" type="text/css"/>
+    <link href="js/home/css/css_2.css" rel="stylesheet" type="text/css"/>
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--    <link rel="stylesheet" href="css/font-awesome.min.css">-->
+    <!--    <link rel="stylesheet" href="plugins/jqgrid/ui.jqgrid-bootstrap.css">-->
+    <!--    <link rel="stylesheet" href="plugins/ztree/css/metroStyle/metroStyle.css">-->
+    <!--    <link rel="stylesheet" href="css/main.css">-->
+    <script src="libs/jquery.min.js"></script>
+    <script src="plugins/layer/layer.js"></script>
+    <script src="libs/bootstrap.min.js"></script>
+    <script src="libs/vue.min.js"></script>
+    <script src="plugins/jqgrid/grid.locale-cn.js"></script>
+    <script src="plugins/jqgrid/jquery.jqGrid.min.js"></script>
+    <script src="plugins/ztree/jquery.ztree.all.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="plugins/laydate/laydate.js"></script>
+    <script src="libs/jquery/jquery.PrintArea.min.js"></script>
+    <style>
+        .ssinfo {
+            width: 230px;
+            height: 30px;
+            margin-left: 75px;
+            padding: 0 15px;
+            -moz-border-radius: 6px;
+            -webkit-border-radius: 6px;
+            border-radius: 50px;
+            border: 1px solid #cfcece;
+            -moz-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1) inset;
+            -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1) inset;
+            box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1) inset;
+            font-family: "Microsoft YaHei", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #0a0909;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+            -o-transition: all .2s;
+            -moz-transition: all .2s;
+            -webkit-transition: all .2s;
+            -ms-transition: all .2s;
+            color: #999999;
+        }
+
+        a:link, a:visited {
+            color: #636262;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #636262;
+            text-decoration: none;
+        }
+
+        li:hover #b {
+            display: block;
+        }
+
+        #b {
+            display: none;
+        }
+    </style>
+    <!--防止网页被框架 -->
+
+
+    <!--ie6PNG图片兼容 -->
+    <script type="text/javascript" src="js/home/js/png.js"></script>
+    <script type="text/javascript" src="js/home/js/jquery.liMarquee.js"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('.png,.index_pic_img,.box');
+    </script>
+
+    <!--ie6PNG图片兼容 -->
+</head>
+
+<body>
+<div id="rrapp">
+    <div id="top_box">
+        <div id="top_left">欢迎来到多分类搜索平台</div>
+        <div id="top_right">
+            <a href="javascript:void(0);" onclick="AddFavorite('多分类搜索平台',location.href)">收藏本站</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="javascript:void(0);" onclick="SetHome(this,document.domain);">设为首页</a></div>
+    </div>
+
+
+    <!--下拉这里开始 -->
+    <script type="text/javascript">
+        var timeout = 200;
+        var closetimer = 0;
+        var ddmenuitem = 0;
+
+        // open hidden layer
+        function mopen(id) {
+            // cancel close timer
+            mcancelclosetime();
+
+            // close old layer
+            if (ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+            // get new layer and show it
+            ddmenuitem = document.getElementById(id);
+            ddmenuitem.style.visibility = 'visible';
+
+        }
+
+        // close showed layer
+        function mclose() {
+            if (ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+        }
+
+        // go close timer
+        function mclosetime() {
+            closetimer = window.setTimeout(mclose, timeout);
+        }
+
+        // cancel close timer
+        function mcancelclosetime() {
+            if (closetimer) {
+                window.clearTimeout(closetimer);
+                closetimer = null;
+            }
+        }
+
+        // close layer when click-out
+        document.onclick = mclose;
+
+        // -->
+        function SetHome(obj, url) {
+            try {
+                obj.style.behavior = 'url(#default#homepage)';
+                obj.setHomePage(url);
+            } catch (e) {
+                if (window.netscape) {
+                    try {
+                        netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                    } catch (e) {
+                        alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+                    }
+                } else {
+                    alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【" + url + "】设置为首页。");
+                }
+            }
+        }
+
+        //收藏本站
+        function AddFavorite(title, url) {
+            try {
+                window.external.addFavorite(url, title);
+            } catch (e) {
+                try {
+                    window.sidebar.addPanel(title, url, "");
+                } catch (e) {
+                    alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+                }
+            }
+        }
+
+        function message() {
+            $('#b').show();
+            $('#c').hide();
+            $('#d').hide();
+            var oDiv = document.getElementById('top_dh_01');
+            oDiv.style.height = '130px';
+        }
+
+        function messageout() {
+            var oDiv = document.getElementById('top_dh_01');
+            oDiv.style.height = '70px';
+        }
+
+        function messageC() {
+            $('#c').show();
+            $('#b').hide();
+            $('#d').hide();
+            var oDiv = document.getElementById('top_dh_01');
+            oDiv.style.height = '130px';
+        }
+
+        function messageoutC() {
+            var oDiv = document.getElementById('top_dh_01');
+            oDiv.style.height = '70px';
+        }
+
+        function messageD() {
+            $('#d').show();
+            $('#b').hide();
+            $('#c').hide();
+            var oDiv = document.getElementById('top_dh_01');
+            oDiv.style.height = '130px';
+        }
+
+        function messageoutD() {
+            var oDiv = document.getElementById('top_dh_01');
+            oDiv.style.height = '70px';
+        }
+    </script>
+
+    <div id="top_dh_01" style="text-align: center; background-color: #009688 ;">
+        <form method="post" class="form form-horizontal">
+            <div id="sddm" style=" width:1200px;margin: auto;height: 100%;overflow:hidden;">
+
+                <ul style=" list-style-type:none;  display:inline; text-align: center; ">
+                    <li style="  line-height: 65px; "><a href="" style="font-size:24px;">欢迎光临</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </li>
+
+                    <li style="  line-height: 65px; font-size:18px;"><a style="font-size:18px;  "
+                                                                        href="shiyan.html">视频資源</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    </li>
+                    <li style="  line-height: 65px; font-size:18px;"><a style="font-size:18px;  "
+                                                                        href="znhdqd.html">资源信息</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    </li>
+                    <li style="  line-height: 65px; font-size:18px;"><a style="font-size:18px;  "
+                                                                        href="kemu.html">科目资料</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    </li>
+                    <li style="  line-height: 65px; font-size:18px;"><a style="font-size:18px;"
+                                                                        href="grxqym.html">个人中心</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    </li>
+
+                    <li style="  line-height: 65px; font-size:18px;"><a style="font-size:18px;"
+                                                                        href="yqltgl.html">在线讨论</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    </li>
+                    <li style="  line-height: 65px; font-size:18px;"><a style="font-size:18px;"
+                                                                        href="index.html#modules/sys/food.html">进入后台</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    </li>
+                    <li style="  line-height: 65px; font-size:18px; margin-left: 100px;"><a style="font-size:18px;"
+                                                                                            href="login.html">登录注册</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    </li>
+
+                </ul>
+            </div>
+        </form>
+
+    </div>
+    <!--下拉这里结束 -->
+
+
+    <link type="text/css" rel="stylesheet" href="js/home/css/wang.css">
+    <div><img src="img/banner.jpg" style="width: 100%;"/></div>
+    <div id="box">
+        <table class="table1200" border="0" align="center" cellpadding="0" cellspacing="8" bgcolor="#FFFFFF">
+            <tr valign="top">
+
+                <td align="center">
+
+
+                    <table height="30" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <table width="100%" height="30" border="0" cellpadding="3" cellspacing="0" bgcolor="#F5F5F5"
+                           class="bg_qc">
+                        <tr>
+                            <td width="25" height="20" align="center"><img
+                                    src="img/nzcms.xinxin.gif" alt="标"/></td>
+                            <td align="left" class="title12">您的位置：
+
+                                智能回答
+                            </td>
+                        </tr>
+                    </table>
+                    <table height="10" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </table>
+
+                    <!--图片格式显示 -->
+                    <meta http-equiv="Content-Type" content="text/html; "/>
+                    <!--服务专家显示 -->
+                    <div>
+                        <a class="btn btn-primary btn-sm" @click="luru">&nbsp;查询</a>
+                        <table width="98%" border="0" align="center" cellpadding="0" cellspacing="0" class="dx"
+                               onMouseOver="this.bgColor='#f5f5f5';" onMouseOut="this.bgColor='#FFFFFF';"
+                               bgcolor="#ffffff" style="cursor:pointer;">
+                            <thead>
+                            <tr>
+                                <th width="5%" height="40">图标</th>
+
+                                <th width="60%">标题</th>
+                                <th width="30%">更新时间</th>
+                                <th width="15%">操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            <tr v-if="znhdList.length>0" v-for="(item, index) in znhdList">
+                                <td width="5%" align="center"><img src="img/txt.png" alt="图标"/></td>
+                                <td width="65%" align="left">{{item.name}}</td>
+                                <td width="30%" align="left">{{item.updatetime}}</td>
+                                <td width="15%" align="left">
+                                    <a class="btn btn-primary btn-sm" @click="chakan(item.id)">&nbsp;查看</a>
+                                </td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+
+                        <table width="98%" border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
+                            <tr>
+                                <td align="right" class="list_title" style=" border-bottom: 1px solid #d8dadc;">&nbsp;
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div style="height: 100px">
+
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="end_dh_BOX">
+
+        <div id="end_dh_03"
+             style="background-color: #009688;width:100%;color: #efefef;font-family:microsoft yahei;position: fixed;left: 0;bottom: 0;">
+            <br>
+            再次欢迎光临观看本平台！
+            <br>
+            <style>
+                .c_img {
+                    position: relative;
+                    margin-left: -200px;
+                }
+
+                .c_words {
+                    margin-top: -25px;
+                    margin-left: 25px;
+                }
+            </style>
+        </div>
+
+
+    </div>
+
+
+    <!-- 支付 模态框-->
+    <div class="modal fade" id="myZnhdModalPreachData" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" style="width: 800px">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title">
+                        智能回答搜索
+                    </h4>
+                </div>
+                <div class="modal-body" style="height: 400px;text-align: center">
+                    <form id="upload" method="post" style="text-align: center" class="form-horizontal"
+                          enctype="multipart/form-data">
+                        <div class="form-group">
+                            <div class="col-sm-2 control-label">关键词</div>
+                            <div class="col-sm-10">
+
+                                <input type="text" class="form-control" id="gjc" placeholder="关键词"/>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                    </button>
+                    <button type="button" class="btn btn-primary" @click="saveZnhd">
+                        确定
+                    </button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+
+
+</div>
+
+
+<script src="libs/jquery.min.js"></script>
+<script src="plugins/jqgrid/jquery.jqGrid.min.js"></script>
+<script src="libs/vue.min.js"></script>
+<script src="libs/bootstrap.min.js"></script>
+<script src="libs/app.js"></script>
+<script src="js/common.js"></script>
+<script type="text/javascript">
+    var vm = new Vue({
+        el: '#rrapp',
+        data: {
+            showLogin: false,
+            username: '',
+            password: '',
+            captcha: '',
+            error: false,
+            errorMsg: '',
+            errorMsgreg: '',
+            src: 'captcha.jpg',
+            sxh: '',
+            sname: '',
+            xzraol: '',
+            susername: '',
+            spassword: '',
+            college: '',
+            major: '',
+            classinfo: '',
+            grade: '',
+            zcspassword: '',
+            znhdList: [],
+            sysuser: {},
+            jiaofeiid: '',
+            newsList: [],  // 添加这一行
+
+
+        },
+        beforeCreate: function () {
+            if (self != top) {
+                top.location.href = self.location.href;
+            }
+        },
+        mounted: function () {   //自动触发写入的函数
+            // this.getListAll();
+            this.getUser();
+            this.saveZnhd();  // 调用方法获取新闻列表
+
+        },
+        methods: {
+            pageChange(newPage) {
+                this.page = newPage;
+                this.fetchNewsList();  // 重新请求数据
+            },
+            chakan: function (id) {
+                window.open("znhdqdinfo.html?id=" + id, '_bland')
+            },
+            saveZnhd: function () {
+                var token = localStorage.getItem("token");
+                var param = {
+                    gjc: $("#gjc").val(),
+                    token: token
+                }
+                $.ajax({
+                    type: "POST",
+                    url: baseURL + "sysIndexQd/getZnhds",
+                    contentType: "application/json",
+                    data: JSON.stringify(param),
+                    success: function (r) {
+                        if (r.code == 0) {
+                                $("#myZnhdModalPreachData").modal('hide');
+                                vm.znhdList = r.znhdList;
+                        } else {
+                            alert(r.msg);
+                        }
+                    }
+                });
+            },
+            luru: function () {
+                $("#myZnhdModalPreachData").modal('show');
+            },
+            getUser: function () {
+                var token = localStorage.getItem("token");
+                console.log("tokentokentokentoken" + token)
+
+                if (token == null) {
+                    // parent.location.href = baseURL + 'login.html';
+                    window.open(baseURL + 'login.html');
+                } else {
+                    var tjarray = {"token": token}
+                    $.ajax({
+                        type: "POST",
+                        url: baseURL + "sysIndexQd/getUser",
+                        contentType: "application/json",
+                        data: JSON.stringify(tjarray),
+                        success: function (r) {
+                            if (r.code === 0) {
+                                vm.sysuser = r.sysuser;
+                            } else {
+                                alert(r.msg);
+                            }
+                        }
+                    });
+                }
+            },
+            getListAll: function () {
+                var token = localStorage.getItem("token");
+                console.log("token--->" + token);
+
+                if (token == null) {
+                    window.open(baseURL + 'login.html');
+                } else {
+                    var tjarray = {"token": token};
+                    $.ajax({
+                        type: "POST",
+                        url: baseURL + "sysIndexQd/getZnhdsListAll",
+                        contentType: "application/json",
+                        data: JSON.stringify(tjarray),
+                        success: function (r) {
+                            if (r.code === 0) {
+                                vm.znhdList = r.znhdList;
+                            } else {
+                                alert(r.msg);
+                            }
+                        },
+                        error: function (xhr, status, error) {
+                            console.error("请求失败:", error);
+                            alert("请求失败，请稍后再试！");
+                        }
+                    });
+                }
+            },
+            fetchNewsList: function () {
+                var token = localStorage.getItem("token");
+
+                $.ajax({
+                    type: "POST",
+                    url: baseURL + "sysIndexQd/getZnhds",
+                    headers: {
+                        'Authorization': 'Bearer ' + token,
+                        'Content-Type': 'application/json'
+                    },
+                    data: JSON.stringify({
+                        page: this.page,
+                        limit: this.limit,
+                        keyword: this.searchKeyword,
+                        type: this.searchType
+                    }),
+                    success: (response) => {
+                        if (r.code === 0) {
+                            vm.znhdList = r.znhdList;
+                        } else {
+                            alert(r.msg);
+                        }
+                    },
+                    error: (xhr, status, error) => {
+                        console.error("请求失败:", error);
+                        alert("请求新闻列表失败，请稍后再试！");
+                    }
+                });
+            }
+        }
+    });
+</script>
+</body>
+</html>

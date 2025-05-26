@@ -1,0 +1,246 @@
+/*公共样式*/
+.pb_sys_common {
+    font-size: 12px;
+    font-family: SimSun;
+    line-height:12px;
+
+    color:#222;
+}
+
+.pb_sys_common a{
+    text-decoration: none;
+}
+
+.pb_sys_common .p_pages{
+    margin-left: -5px;
+}
+
+.pb_sys_common .p_fun_d, .pb_sys_common .p_no_d, .pb_sys_common .p_no_o,.pb_sys_common .p_fun a, .pb_sys_common .p_no a{
+    border: 1px solid #ccc;
+    padding: 5px 8px;
+    margin:0px 0px 0px 5px;
+
+    height:24px;
+    -height:auto;
+
+    line-height:12px;
+    box-sizing:border-box;
+    display:inline-block;
+    vertical-align:middle;
+}
+
+.pb_sys_common .p_t{
+    line-height:12px;
+    margin:0px;
+    padding:0px;
+    display:inline-block;
+    vertical-align:middle;
+}
+
+.pb_sys_common .p_fun_d, .pb_sys_common .p_no_d, .pb_sys_common .p_no_o{
+    color: #ccc;
+}
+
+.pb_sys_common .p_fun a, .pb_sys_common .p_no a{
+    color: #222;
+}
+
+.pb_sys_common .p_dot {
+    margin-left:4px;
+    margin-right:-4px;
+    color:#222;
+}
+
+.pb_sys_common .p_goto input, .pb_sys_common .p_search input {
+    /*
+    height:22px;
+    border: 1px solid #aaa;
+    outline-width:thin;
+    outline-color:#258CFF;
+
+    text-align:center;
+    vertical-align:middle;    
+    */
+    font-family: SimSun;
+    font-size:12px;
+
+    border: 1px solid #aaa;
+    height:22px;
+    line-height:20px;
+    box-sizing:border-box;
+    vertical-align:middle;
+
+    outline-width:thin;
+    outline-color:#258CFF;
+    
+    margin:0px 2px;
+    padding:0px 1px;
+}
+
+
+.pb_sys_common .p_goto input{
+    width:22px;
+    text-align:center;
+}
+
+.pb_sys_common .p_search input{
+    width:100px;
+    text-align:left;
+}
+
+.pb_sys_common .p_goto input:hover, .pb_sys_common .p_goto input:focus, .pb_sys_common .p_search input:hover, .pb_sys_common .p_search input:focus{
+    border: 1px solid #258CFF;
+}
+
+.pb_sys_common .p_goto a, .pb_sys_common .p_search a{
+    border: 1px solid #ccc;
+    padding: 5px 6px;
+    color: #222;
+
+    margin:0px;
+
+    height:24px;
+    -height:auto;
+    
+    line-height:12px;
+    display:inline-block;
+    box-sizing:border-box;
+    vertical-align:middle;
+}
+
+.pb_sys_common .p_dosize_d, .pb_sys_common .p_dosize a{
+    /*
+    border-width:1px 0px 1px 1px;
+    border-style:solid;
+    border-color:#ccc;
+    padding: 5px 6px;
+    color: #222;
+    */
+    border-right:1px solid #ccc;
+    padding: 1px 5px;
+    color: #888888;
+}
+
+.pb_sys_common .p_dosize_d{
+    /*background-color:#f5f5f5;*/
+    color: #222;
+}
+
+.pb_sys_common .p_dosize a:hover{
+    /*background-color:#f5f5f5;*/
+    color: #222;
+}
+
+.pb_sys_common .p_dosize_last_d, .pb_sys_common .p_dosize_last a{
+    /*border-right-width:1px*/
+    border-right-width:0px;
+}
+
+
+/*按钮控制*/
+.pb_sys_normal .p_first,.pb_sys_normal .p_first_d,.pb_sys_normal .p_last,.pb_sys_normal .p_last_d{
+    display:none;
+}
+
+.pb_sys_normal2 .p_first,.pb_sys_normal2 .p_first_d,.pb_sys_normal2 .p_last,.pb_sys_normal2 .p_last_d,.pb_sys_normal2 .p_prev_d,.pb_sys_normal2 .p_next_d{
+    display:none;
+}
+
+.pb_sys_full{
+}
+
+.pb_sys_full2 .p_first_d,.pb_sys_full2 .p_last_d,.pb_sys_full2 .p_prev_d,.pb_sys_full2 .p_next_d{
+    display:none;
+}
+
+.pb_sys_short .p_no,.pb_sys_short .p_no_d,.pb_sys_short .p_no_o,.pb_sys_short .p_dot{
+    display:none;
+}
+
+.pb_sys_short2 .p_no,.pb_sys_short2 .p_no_d,.pb_sys_short2 .p_no_o,.pb_sys_short2 .p_dot,.pb_sys_short2 .p_first,.pb_sys_short2 .p_first_d,.pb_sys_short2 .p_last,.pb_sys_short2 .p_last_d{
+    display:none;
+}
+
+/*样式1-4*/
+.pb_sys_style1 .p_no a:hover,.pb_sys_style1 .p_fun a:hover, .pb_sys_style1 .p_goto a:hover, .pb_sys_style1 .p_search a:hover,
+.pb_sys_style2 .p_no a:hover,.pb_sys_style2 .p_fun a:hover, .pb_sys_style2 .p_goto a:hover, .pb_sys_style2 .p_search a:hover,
+.pb_sys_style3 .p_no a:hover,.pb_sys_style3 .p_fun a:hover, .pb_sys_style3 .p_goto a:hover, .pb_sys_style3 .p_search a:hover,
+.pb_sys_style4 .p_no a:hover,.pb_sys_style4 .p_fun a:hover, .pb_sys_style4 .p_goto a:hover, .pb_sys_style4 .p_search a:hover{
+    background-color: #f5f5f5;
+}
+/*样式1 蓝*/
+.pb_sys_style1 .p_no_d {
+    border: 1px solid #258CFF;
+    color: #fff;
+    background-color: #258CFF;
+}
+/*样式2 红*/
+.pb_sys_style2 .p_no_d {
+    border: 1px solid #F04646;
+    color: #fff;
+    background-color: #F04646;
+}
+/*样式3 绿*/
+.pb_sys_style3 .p_no_d {
+    border: 1px solid #32B907;
+    color: #fff;
+    background-color: #32B907;
+}
+/*样式4 灰*/
+.pb_sys_style4 .p_no_d {
+    border: 1px solid #888;
+    color: #fff;
+    background-color: #888;
+}
+
+/*样式5-8*/
+.pb_sys_style5 .p_fun_d, .pb_sys_style5 .p_no_d, .pb_sys_style5 .p_no_o,.pb_sys_style5 .p_fun a, .pb_sys_style5 .p_no a, .pb_sys_style5 .p_goto a, .pb_sys_style5 .p_search a,
+.pb_sys_style6 .p_fun_d, .pb_sys_style6 .p_no_d, .pb_sys_style6 .p_no_o,.pb_sys_style6 .p_fun a, .pb_sys_style6 .p_no a, .pb_sys_style6 .p_goto a, .pb_sys_style6 .p_search a,
+.pb_sys_style7 .p_fun_d, .pb_sys_style7 .p_no_d, .pb_sys_style7 .p_no_o,.pb_sys_style7 .p_fun a, .pb_sys_style7 .p_no a, .pb_sys_style7 .p_goto a, .pb_sys_style7 .p_search a,
+.pb_sys_style8 .p_fun_d, .pb_sys_style8 .p_no_d, .pb_sys_style8 .p_no_o,.pb_sys_style8 .p_fun a, .pb_sys_style8 .p_no a,  .pb_sys_style8 .p_goto a, .pb_sys_style8 .p_search a{
+    border: 1px solid transparent;
+}
+
+.pb_sys_style5 .p_no_d,.pb_sys_style5 .p_no a:hover,
+.pb_sys_style6 .p_no_d,.pb_sys_style6 .p_no a:hover,
+.pb_sys_style7 .p_no_d,.pb_sys_style7 .p_no a:hover,
+.pb_sys_style8 .p_no_d,.pb_sys_style8 .p_no a:hover{
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.pb_sys_style5 .p_fun a:hover,.pb_sys_style5 .p_goto a:hover,.pb_sys_style5 .p_search a:hover,
+.pb_sys_style6 .p_fun a:hover,.pb_sys_style6 .p_goto a:hover,.pb_sys_style6 .p_search a:hover,
+.pb_sys_style7 .p_fun a:hover,.pb_sys_style7 .p_goto a:hover,.pb_sys_style7 .p_search a:hover,
+.pb_sys_style8 .p_fun a:hover,.pb_sys_style8 .p_goto a:hover,.pb_sys_style8 .p_search a:hover{
+    text-decoration: underline;
+}
+
+
+/*样式5 蓝*/
+.pb_sys_style5 .p_no_d,.pb_sys_style5 .p_no a:hover{
+    border: 1px solid #258CFF;
+    color: #fff;
+    background-color: #258CFF;
+}
+/*样式6 红*/
+.pb_sys_style6 .p_no_d,.pb_sys_style6 .p_no a:hover{
+    border: 1px solid #F04646;
+    color: #fff;
+    background-color: #F04646;
+}
+/*样式7 绿*/
+.pb_sys_style7 .p_no_d,.pb_sys_style7 .p_no a:hover{
+    border: 1px solid #32B907;
+    color: #fff;
+    background-color: #32B907;
+}
+/*样式8 灰*/
+.pb_sys_style8 .p_no_d,.pb_sys_style8 .p_no a:hover{
+    border: 1px solid #888;
+    color: #fff;
+    background-color: #888;
+}

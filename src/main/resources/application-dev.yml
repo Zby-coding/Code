@@ -1,0 +1,49 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+    web-application-type: servlet  # 修复等号语法错误
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    druid:
+      url: jdbc:mysql://localhost:3306/mydb?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
+      username: root
+      password: 123456
+      initial-size: 10
+      max-active: 100
+      min-idle: 10
+      max-wait: 60000
+      pool-prepared-statements: true
+      max-pool-prepared-statement-per-connection-size: 20
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      validation-query: SELECT 1 FROM DUAL
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      stat-view-servlet:
+        enabled: true
+        url-pattern: /druid/*
+        login-username: admin
+        login-password: admin
+      filter:
+        stat:
+          log-slow-sql: true
+          slow-sql-millis: 1000
+          merge-sql: true
+        wall:
+          config:
+            multi-statement-allow: true
+crawler:
+  url-prefix: http://top.news.sina.com.cn/ws/GetTopDataList.php?top_type=day&top_cat=www_www_all_suda_custom&top_time=
+  url-suffix: "&top_showNum=100"
+  start-date: 2020-04-23
+  end-date: 2025-04-23
+  file-path: E:/searched_backend/upload/
+  keywords: 肖战  # 支持多个关键词用空格分隔
+  connection:
+    connect-timeout: 5000     # 连接超时（毫秒）
+    read-timeout: 5000        # 读取超时（毫秒）
+    max-retries: 3            # 最大重试次数
+    retry-delay: 1000         # 重试延迟（毫秒）
+  cache-duration: 300000      # 缓存持续时间（毫秒）

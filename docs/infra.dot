@@ -1,0 +1,16 @@
+digraph INFRA {
+  node [ color = "black", fillcolor = "#E6E6E6", height =1, style = "filled,bold,rounded", fontname = "Arial" ];
+  "firstDataSource" [ label = "firstDataSource
+(javax.sql.DataSource)", shape =cylinder, fillcolor = "#FFCFB3" ];
+  "dynamicDataSource" [ label = "dynamicDataSource
+(cn.jeefast.datasources.DynamicDataSource)", shape =cylinder, fillcolor = "#FFCFB3" ];
+  "performanceInterceptor" [ label = "performanceInterceptor
+(com.baomidou.mybatisplus.plugins.PerformanceInterceptor)", shape =rectangle ];
+  "paginationInterceptor" [ label = "paginationInterceptor
+(com.baomidou.mybatisplus.plugins.PaginationInterceptor)", shape =rectangle ];
+  "staticResourceHandler" [ label = "staticResourceHandler
+(org.springframework.web.servlet.resource.ResourceHttpRequestHandler)", shape =rectangle, fillcolor = "#E78F81" ];
+  "uploadResourceHandler" [ label = "uploadResourceHandler
+(org.springframework.web.servlet.resource.ResourceHttpRequestHandler)", shape =rectangle, fillcolor = "#E78F81" ];
+  "dynamicDataSource" -> "firstDataSource";
+}
