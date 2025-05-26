@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../code/jsp-demo/target/web-demo/WEB-INF/lib/mybatis-3.5.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../code/jsp-demo/target/web-demo/WEB-INF/lib/protobuf-java-3.21.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../code/jsp-demo/target/web-demo/WEB-INF/lib/standard-1.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../code/jsp-demo/target/web-demo/WEB-INF/lib/jstl-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../code/jsp-demo/target/web-demo/WEB-INF/lib/commons-io-2.17.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
