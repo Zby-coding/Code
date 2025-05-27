@@ -72,7 +72,7 @@
 
 1. 确保 Node.js 已安装。
 2. 进入前端项目目录，执行 npm install 安装依赖。
-3. 执行 npm run dev 启动开发服务器
+3. 执行 npm run dev 启动开发服务器。
 
 ## API 文档
 
