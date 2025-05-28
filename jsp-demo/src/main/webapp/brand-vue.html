@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <input type="button" value="新增"><br>
+    <hr>
+    <table id="brandTable" border="1" cellspacing="0" width="800">
+
+        <tr>
+            <th>序号</th>
+            <th>品牌名称</th>
+            <th>企业名称</th>
+            <th>排序</th>
+            <th>品牌介绍</th>
+            <th>状态</th>
+            <th>操作</th>
+
+        </tr>
+
+        <tr v-for="(brand,i) in brands "align=\"center\" >
+            <td>{{i+1}}</td>
+            <td>{{brand.brandName}}</td>
+            <td>{{brand.companyName}}</td>
+            <td>{{brand.ordered}}</td>
+            <td>{{brand.description}}</td>
+            <td v-if="brand.status==0">禁用</td>
+            <td v-else-if="brand.status==1">启用</td>
+            <td>
+                <a href=\"#\">修改</a>
+                <a href=\"#\">删除</a>
+            </td>
+        </tr>
+    </table>
+</div>
+<script src="js/axios-0.18.0.js"></script>
+<script src="js/vue.js"></script>
+<script>
+    new Vue({
+        el: "#app",
+        data() {
+            return {
+                brands: [],
+            }
+        },
+        mounted() {
+            var vueObj = this;
+            axios({
+                method: "get",
+                url: "http://localhost/selectAllServlet"
+            }).then(function (value) {
+                vueObj.brands = value.data;
+            })
+        }
+    })
+
+</script>
+</body>
+
+</html>

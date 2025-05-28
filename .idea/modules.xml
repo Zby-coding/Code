@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SpringMVC/src/SpringMVC.iml" filepath="$PROJECT_DIR$/SpringMVC/src/SpringMVC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVC_Page/src/SpringMVC_Page.iml" filepath="$PROJECT_DIR$/SpringMVC_Page/src/SpringMVC_Page.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ajax-demo/ajax-demo.iml" filepath="$PROJECT_DIR$/ajax-demo/ajax-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/brand-case/src/brand-case.iml" filepath="$PROJECT_DIR$/brand-case/src/brand-case.iml" />
+      <module fileurl="file://$PROJECT_DIR$/code.iml" filepath="$PROJECT_DIR$/code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cookie_session_demo/src/cookie_session_demo.iml" filepath="$PROJECT_DIR$/cookie_session_demo/src/cookie_session_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javase-up/javase-up.iml" filepath="$PROJECT_DIR$/javase-up/javase-up.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Javaweb/jdbc/jdbc.iml" filepath="$PROJECT_DIR$/Javaweb/jdbc/jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jsp-demo/src/jsp-demo.iml" filepath="$PROJECT_DIR$/jsp-demo/src/jsp-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVC/src/main/main.iml" filepath="$PROJECT_DIR$/SpringMVC/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring_Aop/src/main/main2.iml" filepath="$PROJECT_DIR$/Spring_Aop/src/main/main2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring/src/main/main3.iml" filepath="$PROJECT_DIR$/Spring/src/main/main3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-demo-quickstart/src/main/main4.iml" filepath="$PROJECT_DIR$/springboot-demo-quickstart/src/main/main4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Javaweb/mybatis-project/src/main/main5.iml" filepath="$PROJECT_DIR$/Javaweb/mybatis-project/src/main/main5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cookie_session_demo/target/target.iml" filepath="$PROJECT_DIR$/cookie_session_demo/target/target.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVC_Page/target/target2.iml" filepath="$PROJECT_DIR$/SpringMVC_Page/target/target2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jsp-demo/target/target3.iml" filepath="$PROJECT_DIR$/jsp-demo/target/target3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/brand-case/target/target4.iml" filepath="$PROJECT_DIR$/brand-case/target/target4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVC/target/target5.iml" filepath="$PROJECT_DIR$/SpringMVC/target/target5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Javaweb/mybatis-project/src/test/test.iml" filepath="$PROJECT_DIR$/Javaweb/mybatis-project/src/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring/src/test/test2.iml" filepath="$PROJECT_DIR$/Spring/src/test/test2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring_Aop/src/test/test3.iml" filepath="$PROJECT_DIR$/Spring_Aop/src/test/test3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-demo-quickstart/src/test/test4.iml" filepath="$PROJECT_DIR$/springboot-demo-quickstart/src/test/test4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-demo/web-demo.iml" filepath="$PROJECT_DIR$/web-demo/web-demo.iml" />
+    </modules>
+  </component>
+</project>

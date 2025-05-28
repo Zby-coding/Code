@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax</title>
+</head>
+<body>
+
+</body>
+<script>
+    // 创建对象
+    var xhttp = new XMLHttpRequest();
+    // 发送请求
+    xhttp.open("GET","http://localhost/ajaxServlet");
+    xhttp.send();
+    // 响应数据
+    xhttp.onreadystatechange = function (){
+        if(this.readyState == 4 && this.status == 200){
+            // 获取相应文本
+            alert(this.responseText);
+        }
+    }
+
+</script>
+</html>

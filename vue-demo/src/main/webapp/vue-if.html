@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue-demo</title>
+</head>
+<body>
+<div id="app">
+    <div v-if="count==1">div1</div>
+    <div v-else-if="count==2">div2</div>
+    <div v-else>div3</div>
+    <!--v-show 根据条件展示某元素 区别在于切换的是display属性的值-->
+    <div v-show="count==5">div5</div>
+    <!--    动态获取-->
+    <input v-model="count">
+</div>
+</body>
+<script src="js/vue.js"></script>
+<script>
+    new Vue({
+        el: "#app",
+        data() {
+            return {
+                count: ""
+            }
+        },
+        methods: {
+            show() {
+                alert("我被点击了！");
+            }
+        }
+    })
+</script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue-demo</title>
+</head>
+<body>
+<div id="app">
+    <input type="text" v-model="username">
+    <!--插值表达式-->
+    {{username}}
+</div>
+</body>
+<script src="js/vue.js"></script>
+<script>
+    new Vue({
+        el:"#app",
+        data(){
+            return{
+                username:"",
+            }
+
+        }
+    })
+</script>
+</html>

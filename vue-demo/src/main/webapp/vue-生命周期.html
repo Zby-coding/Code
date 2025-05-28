@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue-demo</title>
+</head>
+<body>
+<!--v-on 实现事件的监听-->
+<div id="app">
+    <input type="button" value="普通按钮" v-on:click="show()">
+    <input type="button" value="普通按钮" @click="show()">
+</div>
+</body>
+<script src="js/vue.js"></script>
+<script>
+    new Vue({
+        el:"#app",
+        data(){
+            return{
+                username:"",
+            }
+        },
+        methods:{
+            show(){
+                alert("我被点击了！");
+            }
+        },
+        mounted(){
+            alert("挂载完成！！！");
+        }
+    })
+</script>
+</html>

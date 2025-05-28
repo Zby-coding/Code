@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Javaweb" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Javaweb/mybatis-project" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/javaSE" vcs="Git" />
+  </component>
+</project>

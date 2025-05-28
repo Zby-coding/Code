@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax2</title>
+</head>
+<body>
+
+</body>
+<script src="js/axios-0.18.0.js"></script>
+<script>
+    // get
+/*
+axios({
+    method: "get",
+    url: "http://localhost/ajaxServlet"
+}).then(function (response) {
+    alert(response.data);
+}).catch(function (error) {
+    console.error("请求失败:", error);
+});
+*/
+    // post
+    /*
+    axios({
+        method: "post",
+        url: "http://localhost/ajaxServlet",
+        data: "username=zql"
+    }).then(function (response) {
+        alert(response.data);
+    }).catch(function (error) {
+        console.error("请求失败:", error);
+    });
+     */
+    axios.post("http://localhost/ajaxServlet", "username=zql").then(function (value) {
+        alert(value.data);
+    })
+</script>
+
+</html>

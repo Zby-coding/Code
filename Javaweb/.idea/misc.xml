@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/maven-project/pom.xml" />
+        <option value="$PROJECT_DIR$/web-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis-project/pom.xml" />
+        <option value="$PROJECT_DIR$/../web-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/../jsp-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/../cookie-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/../cookkie_session-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/../cookie_session_demo/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/web-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/../cookie&amp;session-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/../cookkie_session-demo/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

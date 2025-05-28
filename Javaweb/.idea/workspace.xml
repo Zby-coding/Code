@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="web-demo:Web exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f109cf7a-62ef-4e07-9c1a-795e10e2a899" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/web_demo_Web_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_blame.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbc/jdbc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbc/src/com/zby/code/jdbc/JDBCDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbc/src/com/zby/code/jdbc/JDBCDemo2_DriverManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbc/src/com/zby/code/jdbc/JDBCDemo3_Connection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbc/src/com/zby/code/jdbc/JDBCDemo4_Statement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbc/src/com/zby/code/jdbc/JDBCDemo5_ResultSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbc/src/com/zby/code/jdbc/JDBCDemo7_Druid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbc/src/com/zby/code/pojo/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbc/src/com/zby/code/pojo/brandExample/Brand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbc/src/com/zby/code/pojo/brandExample/TestBrand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbc/src/druid.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/druid-1.1.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/hamcrest-core-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-4.13.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-project/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-project/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-project/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-project/.idea/git_toolbox_blame.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-project/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-project/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-project/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-project/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-project/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-project/src/main/java/com/zby/mapper/BrandMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-project/src/main/java/com/zby/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-project/src/main/java/com/zby/pojo/Brand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-project/src/main/java/com/zby/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-project/src/main/resources/com/zby/mapper/BrandMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-project/src/main/resources/com/zby/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-project/src/main/resources/com/zby/mapper/UserMapper2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-project/src/test/java/BrandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-project/src/test/java/UserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/.idea/git_toolbox_blame.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/com.zby.code.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day02/homework/ConstantDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day03/homework/OperatorDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day03/homework/Test01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day03/homework/Test02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day03/homework/Test03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day04/homework/Test01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day04/homework/Test02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day04/homework/Test04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day04/homework/Test05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day04/homework/Test06.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day04/homework/Test07.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day04/homework/Test08.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day06/homework/Test01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day06/homework/Test02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day06/homework/Test03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day06/homework/Test04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day06/homework/Test06.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day07/homework/entiy/Phone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day07/homework/entiy/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day07/homework/entiy/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day07/homework/test/Demo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day07/homework/test/StudentDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day07/homework/test/TeacherTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day08/homework/ArrayTest01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day08/homework/ArrayTest02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day08/homework/ArrayTest03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day08/homework/ArrayTest04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day08/homework/ArrayTest05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day08/homework/ArrayTest06.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day08/homework/ArrayTest07.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day08/homework/ArrayTest08.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day08/homework/ArrayTest09.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day08/homework/ArrayTest10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day09/homework/Test01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day09/homework/Test02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day09/homework/Test03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day09/homework/Test04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day09/homework/gui/ChatRoomDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day09/homework/gui/GuessNumberDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day09/homework/gui/KaoQinDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day09/homework/gui/UserLoginDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day10/homework/DateChooser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day10/homework/Test01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day10/homework/Test02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day10/homework/Test03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day10/homework/Test04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day10/homework/string/ChatRoomDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day10/homework/string/Test01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day10/homework/string/UserLoginDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day10/homework/wrapperClass/Test01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day10/homework/wrapperClass/Test02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day11/code/PictureFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day11/code/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day11/code/images/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day11/code/images/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day11/code/images/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day11/code/images/11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day11/code/images/12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day11/code/images/13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day11/code/images/14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day11/code/images/15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day11/code/images/16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day11/code/images/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day11/code/images/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day11/code/images/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day11/code/images/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day11/code/images/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day11/code/images/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day11/code/images/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day11/code/images/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day11/code/images/background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day11/code/images/canzhaotu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day11/code/images/chongzhi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day11/code/images/qiuzhu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day11/code/images/shang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day11/code/images/title.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day11/code/images/xia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day11/code/images/you.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day11/code/images/zuo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day15/homework/Test01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day15/homework/Test02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day15/homework/Test03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day15/homework/Test04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day15/homework/Test05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day15/homework/calcCharNum.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day15/homework/calcCharNum2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day15/homework/questions.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day15/homework/studentInfo1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/com.zby.code/src/day15/homework/studentInfo2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaSE/javaSE.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="package-info" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Jsp File" />
+        <option value="Servelt" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/mybatis-project" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\Java\mvn_repo" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../Java/Apache-tool/apache-maven-3.9.9" />
+        <option name="userSettingsFile" value="E:\Java\Apache-tool\apache-maven-3.9.9\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2tZr8tgZCeHL7w69PagFUjvuUed" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "E:/学习资料/code/jsp-demo/src/main/java/com/zby/util",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15429688",
+    "project.structure.side.proportion": "0.13218391",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\学习资料\code\jsp-demo\src\main\java\com\zby\util" />
+      <recent name="E:\学习资料\code\jsp-demo\src\main\webapp" />
+      <recent name="E:\学习资料\code\jsp-demo\src\main\resources\com\zby\mapper" />
+      <recent name="E:\学习资料\code\jsp-demo\src\main\java\com\zby\mapper" />
+      <recent name="E:\学习资料\code\jsp-demo\src\main\java\com\zby\pojo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\学习资料\code\jsp-demo\src\main\resources" />
+      <recent name="E:\学习资料\code\web-demo\src\main\resources\com.zby\mapper" />
+      <recent name="E:\学习资料\code\web-demo\src\main\resources\com\zby" />
+      <recent name="E:\学习资料\code\web-demo\src\main\resources\mapper" />
+      <recent name="E:\学习资料\code\web-demo\src\main" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zby.session" />
+      <recent name="com.zby.controller" />
+      <recent name="com.zby.util" />
+      <recent name="com.zby" />
+      <recent name="com.zby.code.jdbc" />
+    </key>
+  </component>
+  <component name="RunManager" selected="应用程序.CheckCodeUtil">
+    <configuration name="CheckCodeUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zby.util.CheckCodeUtil" />
+      <module name="jsp-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zby.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Servlet01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zby.Servlet01" />
+      <module name="web-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zby.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zby.code.pojo.Test" />
+      <module name="jdbc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zby.code.pojo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="URLDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zby.URLDemo" />
+      <module name="web-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zby.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestBrand.delete_druid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jdbc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zby.code.pojo.brandExample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zby.code.pojo.brandExample" />
+      <option name="MAIN_CLASS_NAME" value="com.zby.code.pojo.brandExample.TestBrand" />
+      <option name="METHOD_NAME" value="delete_druid" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="web-demo" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.34" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="web-demo:Web exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/web_demo_Web_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="a0385ef8-8acc-4d85-af9b-c17d061db4a3" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="65196" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="web-demo:Web exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.TestBrand.delete_druid" />
+      <item itemvalue="Tomcat 服务器.web-demo" />
+      <item itemvalue="应用程序.CheckCodeUtil" />
+      <item itemvalue="应用程序.URLDemo" />
+      <item itemvalue="应用程序.Servlet01" />
+      <item itemvalue="应用程序.Test" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.CheckCodeUtil" />
+        <item itemvalue="应用程序.URLDemo" />
+        <item itemvalue="应用程序.Servlet01" />
+        <item itemvalue="应用程序.Test" />
+        <item itemvalue="JUnit.TestBrand.delete_druid" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="f109cf7a-62ef-4e07-9c1a-795e10e2a899" name="更改" comment="" />
+      <created>1740570303501</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1740570303501</updated>
+      <workItem from="1740570305603" duration="7700000" />
+      <workItem from="1740642496576" duration="11030000" />
+      <workItem from="1740659268317" duration="6771000" />
+      <workItem from="1741341898334" duration="21604000" />
+      <workItem from="1741424920291" duration="6364000" />
+      <workItem from="1741438791791" duration="52000" />
+      <workItem from="1741438862890" duration="15000" />
+      <workItem from="1741438915212" duration="136000" />
+      <workItem from="1741439109212" duration="24000" />
+      <workItem from="1741439148201" duration="13000" />
+      <workItem from="1741439198410" duration="19000" />
+      <workItem from="1741439231564" duration="62000" />
+      <workItem from="1741439312744" duration="14000" />
+      <workItem from="1741439521150" duration="109000" />
+      <workItem from="1741440262689" duration="41000" />
+      <workItem from="1741440379624" duration="15937000" />
+      <workItem from="1741513039435" duration="56998000" />
+      <workItem from="1741780492484" duration="12045000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

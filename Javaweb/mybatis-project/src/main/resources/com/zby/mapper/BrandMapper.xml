@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+namespace 命名空间
+select id 唯一标识
+resultType 返回值类型
+
+      数据库中字段和类中属性名不一样 无法自动映射
+      1.别名  id, brand_name as brandName, company_name as  companyName, ordered, description, status
+      2.片段
+      <sql id="brand_column">
+        id, brand_name as brandName, company_name as  companyName, ordered, description, status
+      </sql>
+      引用  <include refid="brand_column"></include>
+      3.resultMap      id：唯一的标识 type：对应的实体类
+     <resultMap id="brandResultMap" type="brand">
+       id :主键的映射  result：普通字段映射
+      column：表中的名  property：类中的名
+        <result column="brand_name" property="brandName"/>
+        <result column="company_name" property="companyName"/>
+-->
+<mapper namespace="com.zby.mapper.BrandMapper">
+    <resultMap id="BrandById" type="com.zby.pojo.Brand">
+        <result column="brand_name" property="brandName"/>
+        <result column="company_name" property="companyName"/>
+    </resultMap>
+    <!--
+        返回id值
+        <insert id="add" useGeneratedKeys="true" keyProperty="id">
+    -->
+    <insert id="add" useGeneratedKeys="true" keyProperty="id">
+        insert into tb_brand (brand_name, company_name, ordered, description, status)
+        values (#{brandName}, #{companyName}, #{ordered}, #{description}, #{status});
+    </insert>
+    <select id="selectAll" resultType="com.zby.pojo.Brand">
+        <!--        select * from tb_user where id = #{id}-->
+        select id, brand_name brandName, company_name companyName, ordered, description, status from tb_brand;
+    </select>
+    <update id="updateAll">
+        update tb_brand
+        set brand_name   = #{brandName},
+            company_name = #{companyName},
+            ordered      = #{ordered},
+            description  = #{description},
+            status       = #{status}
+        where id = #{id};
+    </update>
+    <update id="dynamicUpdateAll">
+        update tb_brand
+        <set>
+            <if test="brandName != null and brandName != ''">
+                brand_name = #{brandName},
+            </if>
+            <if test="companyName != null and brandName != ''">
+                company_name = #{companyName},
+            </if>
+            <if test="orderd != null and ordered != ''">
+                ordered = #{ordered},
+            </if>
+            <if test="description != null and description != ''">
+                description = #{description},
+            </if>
+            <if test="status != null and status != ''">
+                status = #{status},
+            </if>
+        </set>
+        where id=#{id};
+    </update>
+    <update id="dynamicUpdateSingle">
+        update tb_brand
+        <set>
+            <if test="brandName != null and brandName != ''">
+                brand_name = #{brandName},
+            </if>
+            <if test="companyName != null and companyName != ''">
+                company_name = #{companyName},
+            </if>
+            <if test="ordered != null and ordered != ''">
+                ordered = #{ordered},
+            </if>
+            <if test="status != null and status != ''">
+                status = #{status},
+            </if>
+            <if test="description != null and description != ''">
+                description = #{description},
+            </if>
+        </set>
+        where id=#{id};
+    </update>
+    <!--
+sql 有参数：
+1.#{id} 会替换成? 为了防止注入
+2.${id} 拼接sql 不安全
+
+ SQL 语句中特殊字符处理:
+ 1.转义
+ 2.CDATA CD回车 在里面写特殊字符
+-->
+    <select id="selectById" resultMap="BrandById">
+        select *
+        from tb_brand
+        where id = #{id};
+    </select>
+
+    <select id="selectByCondition" resultMap="BrandById">
+        select *
+        from tb_brand
+        where #{status}
+          and brand_name like #{brandName}
+          and company_name like #{companyName};
+    </select>
+
+    <select id="selectByConditionObject" resultMap="BrandById">
+        select *
+        from tb_brand
+        where #{status}
+          and brand_name like #{brandName}
+          and company_name like #{companyName};
+    </select>
+    <select id="selectByConditionMap" resultMap="BrandById">
+        select *
+        from tb_brand
+        where #{status}
+          and brand_name like #{brandName}
+          and company_name like #{companyName};
+    </select>
+    <!--
+    动态sql
+    if：条件查询 test="逻辑表达式"
+    问题: 条件无法正常连接 sql语法错误
+    解决：
+        在where后面加上1=1
+        <where></where>标签 注意 把 sql中的where关键字删除
+    -->
+    <select id="selectByDynamicSql" resultMap="BrandById">
+        select * from tb_brand
+        <where>
+            <if test="status != null">
+                and status = #{status}
+            </if>
+            <if test="companyName != null and companyName != ''">
+                and company_name like #{companyName}
+            </if>
+            <if test="brandName != null and brandName != ''">
+                and brand_name like #{brandName}
+            </if>
+        </where>
+    </select>
+    <select id="selectByDynamicSqlSingleQuery" resultMap="BrandById">
+        select *
+        from tb_brand
+        where
+        <choose><!--switch-->
+            <when test="status != null"> <!--case-->
+                status = #{status}
+            </when>
+            <when test="companyName != null and companyName != ''">
+                company_name like #{companyName}
+            </when>
+            <when test="brandName != null and brandName != ''">
+                brand_name like #{brandName}
+            </when>
+            <otherwise>1=1</otherwise> <!--default-->
+        </choose>
+    </select>
+    <delete id="deleteById">
+        delete
+        from tb_brand
+        where id = #{id}
+    </delete>
+    <delete id="deleteByIds">
+        delete from tb_brand where id in
+        <foreach collection="ids" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+</mapper>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON</title>
+</head>
+<body>
+
+</body>
+<script>
+    // 创建一个json串
+    var jsonStr = '{"name":"zhangsan","age":23,"addr":["北京","上海","西安"]}';
+    alert(jsonStr)
+    // json转对象
+    var jsonObj = JSON.parse(jsonStr);
+    alert(jsonObj + "name:" + jsonObj.name);
+    var jsonStr2 = JSON.stringify(jsonObj);
+    alert(jsonStr2)
+</script>
+</html>

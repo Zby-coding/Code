@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>addBrand</title>
+</head>
+<body>
+<h3>添加品牌</h3>
+<div id="app">
+    <form action="/insertServlet" method="get">
+        品牌名称：<input name="brandName" v-model="brand.brandName"><br>
+        企业名称：<input name="companyName" v-model="brand.companyName"><br>
+        排序：<input name="ordered"v-model="brand.ordered"><br>
+        描述信息：<textarea rows="5" cols="20" name="description" v-model="brand.description"></textarea><br>
+        状态：
+        <input type="radio" name="status" value="0" v-model="brand.status">禁用
+        <input type="radio" name="status" value="1" v-model="brand.status">启用<br>
+
+        <input type="submit" value="提交" @click="submitForm">
+    </form>
+</div>
+<script src="js/vue.js"></script>
+<script>
+    new Vue({
+        el: "#app",
+        data() {
+            return {
+                brand: {}
+            }
+        },
+        methods: {
+            submitForm() {
+                var vueObj = this;
+                axios({
+                    method: "post",
+                    url: "http://localhost/addBrandServlet",
+                    data: vueObj.brand
+                }).then(function (value) {
+                    if (value.data == "success") {
+                        location.href = "http://localhost/brand.html"
+                    }
+                })
+            }
+        }
+    })
+
+</script>
+</body>
+
+</html>

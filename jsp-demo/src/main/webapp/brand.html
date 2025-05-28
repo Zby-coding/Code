@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="新增"><br>
+<hr>
+<table id="brandTable" border="1" cellspacing="0" width="800">
+
+
+
+
+</table>
+
+</body>
+<script src="js/axios-0.18.0.js"></script>
+<script>
+    window.onload = function () {
+        axios({
+            method: "get",
+            url: "http://localhost/selectAllServlet"
+        }).then(function (value) {
+            var brands = value.data;
+            for (let i = 0; i < brands.length; i++) {
+                var tableHead = "    <tr>\n" +
+                    "        <th>序号</th>\n" +
+                    "        <th>品牌名称</th>\n" +
+                    "        <th>企业名称</th>\n" +
+                    "        <th>排序</th>\n" +
+                    "        <th>品牌介绍</th>\n" +
+                    "        <th>状态</th>\n" +
+                    "        <th>操作</th>\n" +
+                    "    </tr>"
+                var brand = brands[i];
+                var status = brand.status;
+                if(status==1){
+                    status="启用";
+                }else{
+                    status="禁用";
+                }
+                tableHead += "<tr align=\"center\">\n" +
+                    "        <td>"+brand.id+"</td>\n" +
+                    "        <td>"+brand.brandName+"</td>\n" +
+                    "        <td>"+brand.companyName+"</td>\n" +
+                    "        <td>"+brand.ordered+"</td>\n" +
+                    "        <td>"+brand.description+"</td>\n" +
+                    "        <td>"+status+"</td>\n" +
+                    "        <td><a href=\"#\">修改</a> <a href=\"#\">删除</a></td>\n" +
+                    "    </tr>"
+                document.getElementById("brandTable").innerHTML = tableHead;
+            }
+        })
+    }
+
+</script>
+</html>
