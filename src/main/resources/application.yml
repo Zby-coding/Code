@@ -1,0 +1,26 @@
+server:
+  port: 8087
+spring:
+  application:
+    name: userCenter-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/usercenter_db
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  # session 失效时间
+  session:
+    timeout: 86400
+mybatis:
+    mapper-locations: classpath:mapper/**/*.xml
+    type-aliases-package: com.zby.usercenter_backend.model.domain
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false
+  global-config:
+    db-config:
+      logic-delete-field: isDelete
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
